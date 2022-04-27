@@ -1,0 +1,96 @@
+on fs
+    mkdir /data/misc/ 0775 system system
+    mkdir /data/misc/gatekeeper 0775 system system
+    mkdir /data/misc/keystore 0775 system system
+    restorecon /data
+
+    restorecon_recursive /system/bin/
+    chmod 0755 /system/bin/vold
+    chmod 0755 /system/bin/logcat
+    chmod 0755 /system/bin/logd
+    chmod 0755 /system/bin/servicemanager
+    chmod 0755 /system/bin/hwservicemanager
+
+on property:vold.miui=factoryreset
+
+    # Mount binderfs
+    mkdir /dev/binderfs
+    mount binder binder /dev/binderfs stats=global
+    chmod 0755 /dev/binderfs
+
+
+    symlink /dev/binderfs/binder /dev/binder
+    symlink /dev/binderfs/hwbinder /dev/hwbinder
+    symlink /dev/binderfs/vndbinder /dev/vndbinder
+
+    chmod 0666 /dev/binderfs/hwbinder
+    chmod 0666 /dev/binderfs/binder
+    chmod 0666 /dev/binderfs/vndbinder
+
+    # debugfs
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+
+    # Create location for fs_mgr to store abbreviated output from filesystem
+    # checker programs.
+    mkdir /dev/fscklogs 0770 root system
+
+    wait /dev/block/bootdevice
+    mount_all miui.factoryreset.fstab --early
+
+    # setprop ro.boot.product.vendor.sku cause keymaster hidl need it
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.qcv.sh
+    setprop ro.boot.product.vendor.sku ${ro.vendor.qti.soc_name}
+
+    # for logcat
+    start logd
+
+    # for vold
+    copy /system/etc/recovery.fstab /system/etc/recovery.fstab_bk
+    copy /vendor/etc/fstab.qcom /system/etc/recovery.fstab
+    copy /vendor/etc/fstab.default /system/etc/recovery.fstab
+
+    # necessory services
+    start vold
+    start servicemanager
+    start hwservicemanager
+    start vndservicemanager
+
+    # for qseecomd: see uevend.qcom.rc
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
+    #permissions for UFS RPMB BSG device node
+    chown system system /dev/0:0:0:49476
+
+    # qseecomd
+    start qseecomd
+
+    # keymaster etc.
+    class_start early_hal
+
+    wait_for_prop hwservicemanager.ready true
+    exec_start wait_for_keymaster
+    mount_all miui.factoryreset.fstab --late
+
+    # We chown/chmod /data again so because mount is run as root + defaults
+    chown system system /data
+    chmod 0771 /data
+    # We restorecon /data in case the userdata partition has been reset.
+    restorecon /data
+    copy /system/etc/recovery.fstab_bk /system/etc/recovery.fstab
+    start factoryreset
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+
+service qseecomd /vendor/bin/qseecomd
+    class core
+    user root
+    group root
+
+service factoryreset /system/bin/recovery --wipe_data_skip_preinstall
+    stop vold
+    class late_start
+    seclabel u:r:recovery:s0
