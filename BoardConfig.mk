@@ -47,8 +47,15 @@ TARGET_COPY_OUT_VENDOR := vendor
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
+    dtbo \
+    odm \
+    product \
     system \
-    vendor
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
 
 TW_INCLUDE_REPACKTOOLS := true
 
