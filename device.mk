@@ -7,6 +7,15 @@
 
 LOCAL_PATH := device/xiaomi/elish
 # A/B
+ENABLE_VIRTUAL_AB := true
+
+PRODUCT_PACKAGES += \
+    otapreopt_script \
+    checkpoint_gc \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -15,21 +24,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.kona
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service \
     bootctrl.kona \
-    libgptutils \
-    libz \
-    libcutils
+    bootctrl.kona.recovery
+	
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
-    update_engine \
-    update_verifier \
-    update_engine_sideload
