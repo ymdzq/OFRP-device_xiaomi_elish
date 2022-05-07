@@ -1,0 +1,38 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# mount point          fstype  device                                        device2              flags
+
+/metadata              ext4    /dev/block/bootdevice/by-name/metadata                             flags=display="Metadata";backup=1;wrappedkey
+/data                  f2fs    /dev/block/bootdevice/by-name/userdata                             flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+/cust                  ext4    /dev/block/bootdevice/by-name/cust                                 flags=display="Cust";backup=1;flashimg=1
+
+# Boot
+/boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=slotselect;backup=1;flashimg=1;
+/dtbo                  emmc    /dev/block/bootdevice/by-name/dtbo                                 flags=backup=1;display="Dtbo";slotselect;flashimg=1
+/vendor_boot           emmc    /dev/block/bootdevice/by-name/vendor_boot                          flags=display="vendor_boot";slotselect;backup=1;flashimg=1
+/exaid                 emmc    /dev/block/bootdevice/by-name/exaid                                flags=display="exaid";backup=1;flashimg=1
+/vbmeta                emmc    /dev/block/bootdevice/by-name/vbmeta                               flags=display="vbmeta";backup=1;slotselect;flashimg=1
+/vbmeta_system         emmc    /dev/block/bootdevice/by-name/vbmeta_system                        flags=display="vbmeta_system";slotselect;backup=1;flashimg=1
+/logo                  emmc    /dev/block/bootdevice/by-name/logo                                 flags=display="logo";backup=1;flashimg=1
+/misc                  emmc    /dev/block/bootdevice/by-name/misc                                 flags=display="misc";backup=1;flashimg=1
+
+# Persistent Firmware & Properties
+/persist               ext4    /dev/block/bootdevice/by-name/persist                              flags=display="Persist"
+/persist_image         emmc    /dev/block/bootdevice/by-name/persist                              flags=display="Persist";flashimg=1
+
+# Firmware partitions
+/bluetooth             vfat    /dev/block/bootdevice/by-name/bluetooth                            flags=display="bluetooth";slotselect;fsflags="ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait"
+/bluetooth_image       emmc    /dev/block/bootdevice/by-name/bluetooth                            flags=display="bluetooth";slotselect;backup=1;flashimg=1
+/dsp                   vfat    /dev/block/bootdevice/by-name/dsp                                  flags=display="dsp";slotselect
+/dsp_image             emmc    /dev/block/bootdevice/by-name/dsp                                  flags=display="dsp";slotselect;backup=1;flashimg=1
+/modem                 vfat    /dev/block/bootdevice/by-name/modem                                flags=display="Modem";slotselect;fsflags="ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait"
+/modem_img             emmc    /dev/block/bootdevice/by-name/modem                                flags=backup=1;display="Modem";slotselect;flashimg=1
+/efs1                  emmc    /dev/block/bootdevice/by-name/modemst1                             flags=backup=1;display=EFS
+/efs2                  emmc    /dev/block/bootdevice/by-name/modemst2                             flags=backup=1;subpartitionof=/efs1
+/efsc                  emmc    /dev/block/bootdevice/by-name/fsc                                  flags=backup=1;subpartitionof=/efs1
+/efsg                  emmc    /dev/block/bootdevice/by-name/fsg                                  flags=backup=1;subpartitionof=/efs1
+
+# Removable storage
+/usb_otg               auto    /dev/block/sdg1                            /dev/block/sdg          flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
