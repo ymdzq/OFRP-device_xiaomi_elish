@@ -96,3 +96,7 @@ TARGET_USES_LOGD := true
 
 # haptics
 TW_NO_HAPTICS := true
+
+# Tool
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP :=true
