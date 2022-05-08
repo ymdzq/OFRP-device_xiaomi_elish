@@ -93,3 +93,6 @@ TW_DEFAULT_LANGUAGE := "zh_CH"
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# haptics
+TW_NO_HAPTICS := true
