@@ -33,6 +33,12 @@ ENABLE_SCHEDBOOST := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := elish,enuma
 
+# Bootloader
+PRODUCT_PLATFORM := kona
+TARGET_BOOTLOADER_BOARD_NAME := kona
+TARGET_NO_BOOTLOADER := true
+TARGET_USES_UEFI := true
+
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728 # This is the maximum known partition size, but it can be higher, so we just omit it
