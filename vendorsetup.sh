@@ -9,7 +9,7 @@
     export LC_ALL="C"
     export ALLOW_MISSING_DEPENDENCIES=true
 
-	echo -e "\x1b[96melish: 开始添加OrangeFox Vars...\x1b[m"
+    echo -e "\x1b[96melish: 开始添加OrangeFox Vars...\x1b[m"
     ## 构建信息
     # 设置显示在关于页面里的维护人员名称
     export OF_MAINTAINER=ymdzq
@@ -55,12 +55,12 @@
     # 关闭闪光灯功能
     # export OF_FLASHLIGHT_ENABLE=0
     # 自定义闪光灯路径，修复闪光灯
-    #export OF_FL_PATH1=/sys/class/leds/led:torch_0
-    #export OF_FL_PATH2=/sys/class/leds/led:torch_1
+    # export OF_FL_PATH1=/sys/class/leds/led:torch_0
+    # export OF_FL_PATH2=/sys/class/leds/led:torch_1
 
     ## 界面显示设定
     # 设置屏幕高度，状态栏高度，状态栏左右边距
-	#由于橙狐默认屏幕比例是16：9,所以应设置屏幕高度为屏幕比例换算成n：9之后，n*120
+    # 由于橙狐默认屏幕比例是16：9,所以应设置屏幕高度为屏幕比例换算成n：9之后，n*120
     export OF_SCREEN_H=1728
     # export OF_STATUS_H=60
     # export OF_STATUS_INDENT_LEFT=48
@@ -94,12 +94,12 @@
     # 在MIUI OTA还原期间尝试解密内部存储（而不是错误退出）
     export OF_OTA_RES_DECRYPT=1
     # 在准备MIUI OTA增量更新时不备份vendor_image
-	export OF_NO_MIUI_OTA_VENDOR_BACKUP
+    export OF_NO_MIUI_OTA_VENDOR_BACKUP
     # 防止橙狐在解密后重新运行自启动进程
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     # 使用指定的magisk
-    export FOX_USE_SPECIFIC_MAGISK_ZIP="/home/Shiro/Magisk.zip"
-	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
-	export MAGISK_VER=24.3
+    export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
+    # 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
+    export MAGISK_VER=24.3
 
     echo -e "\x1b[96melish: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
