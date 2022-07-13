@@ -1,15 +1,13 @@
 import /init.recovery.qcom_decrypt.rc
 
+on early-fs
+    write /proc/sys/kernel/sched_lib_name "recovery,Updater,updater,update_engine_sideload"
+    write /proc/sys/kernel/sched_lib_mask_force 255
 
 on fs
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-
-on early-fs
-    write /proc/sys/kernel/sched_lib_name "recovery,Updater,updater,update_engine_sideload"
-    write /proc/sys/kernel/sched_lib_mask_force 255
-    start vold
 
 on post-fs
     start boot-hal-1-1
