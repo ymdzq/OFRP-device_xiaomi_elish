@@ -48,6 +48,8 @@
     export OF_UNBIND_SDCARD_F2FS=1
     # 当修补recovery/boot镜像时，始终指示magiskboot v24+修补vbmeta标头（自动禁用avb验证？）
     export OF_PATCH_VBMETA_FLAG=1
+	# 指定super分区的完整大小，修复部分设备刷入miui rom失败，VAB设备专用变量
+	export OF_DYNAMIC_FULL_SIZE=9126805504
 
     ## 硬件功能设定
     # 没有绿色led
