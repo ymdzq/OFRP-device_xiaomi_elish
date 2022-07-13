@@ -169,6 +169,9 @@ TW_NO_HAPTICS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
 
+# python, for ABX xml conversion (change to true to enable)
+TW_INCLUDE_PYTHON := true
+
 ifeq ($(TW_DEVICE_VERSION),)
 TW_DEVICE_VERSION=12.0
 endif
