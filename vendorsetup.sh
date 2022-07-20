@@ -84,7 +84,7 @@
     # 在MIUI OTA还原期间尝试解密内部存储（而不是错误退出）
     export OF_OTA_RES_DECRYPT=1
     # 在准备MIUI OTA增量更新时不备份vendor_image
-    export OF_NO_MIUI_OTA_VENDOR_BACKUP
+    export OF_NO_MIUI_OTA_VENDOR_BACKUP=1
     # 防止橙狐在解密后重新运行自启动进程
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     # 尝试处理AVB2.0，防止橙狐被官方recovery替换
