@@ -80,8 +80,10 @@ extern "C" {
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
 #define PTN_XBL_CFG                     "xbl_config"
-#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, "abl", "aop", "cmnlib", "cmnlib64", "devcfg", "dsp", "dtbo", "featenabler", "hyp", "imagefv", "keymaster", "qupfw", "tz", "uefisecapp", "vbmeta", "vbmeta_system"
-#define AB_PTN_LIST PTN_SWAP_LIST, "bluetooth", "boot", "modem", "odm", "product", "system", "system_ext", "vendor", "vendor_boot"
+#define PTN_MULTIIMGOEM                 "multiimgoem"
+#define PTN_MULTIIMGQTI                 "multiimgqti"
+#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, "sbl1", "rpm", "tz", "aboot", "abl", "hyp", "lksecapp", "keymaster", "cmnlib", "cmnlib32", "cmnlib64", "pmic", "apdp", "devcfg", "hosd", "keystore", "msadp", "mdtp", "mdtpsecapp", "dsp", "aop", "qupfw", "vbmeta", "dtbo", "imagefv", "ImageFv", "multiimgoem", "multiimgqti", "vm-bootsys", "shrm", "cpucp"
+#define AB_PTN_LIST PTN_SWAP_LIST, "boot", "system", "vendor", "odm", "modem", "bluetooth", "system_ext", "vendor_boot", "product"
 #define BOOT_DEV_DIR    "/dev/block/bootdevice/by-name"
 
 /******************************************************************************
