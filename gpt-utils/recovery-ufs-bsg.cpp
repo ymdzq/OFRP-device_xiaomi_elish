@@ -100,7 +100,7 @@ static int ufs_bsg_ioctl(int fd, struct ufs_bsg_request *req,
         enum bsg_ioctl_dir dir)
 {
     int ret;
-    struct sg_io_v4 sg_io = {0};
+    struct sg_io_v4 sg_io;
 
     sg_io.guard = 'Q';
     sg_io.protocol = BSG_PROTOCOL_SCSI;
@@ -155,8 +155,8 @@ static int ufs_query_attr(int fd, __u32 value,
         __u8 func, __u8 opcode, __u8 idn,
         __u8 index, __u8 sel)
 {
-    struct ufs_bsg_request req = {0};
-    struct ufs_bsg_reply rsp = {0};
+    struct ufs_bsg_request req;
+    struct ufs_bsg_reply rsp;
     enum bsg_ioctl_dir dir = BSG_IOCTL_DIR_FROM_DEV;
     int ret = 0;
 
@@ -252,4 +252,3 @@ error:
 #endif
 }
 #endif
-

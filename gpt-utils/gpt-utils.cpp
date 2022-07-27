@@ -32,6 +32,7 @@
 /******************************************************************************
  * INCLUDE SECTION
  ******************************************************************************/
+#include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
 #include <errno.h>
@@ -42,6 +43,7 @@
 #include <limits.h>
 #include <dirent.h>
 #include <linux/kernel.h>
+#include <asm/byteorder.h>
 #include <map>
 #include <vector>
 #include <string>
@@ -157,11 +159,18 @@ static int blk_rw(int fd, int rw, int64_t offset, uint8_t *buf, unsigned len)
     else
         r = read(fd, buf, len);
 
-    if (r < 0)
+    if (r < 0) {
         fprintf(stderr, "block dev %s failed: %s\n", rw ? "write" : "read",
                 strerror(errno));
-    else
-        r = 0;
+    } else {
+        if (rw) {
+            r = fsync(fd);
+            if (r < 0)
+                fprintf(stderr, "fsync failed: %s\n", strerror(errno));
+        } else {
+            r = 0;
+        }
+    }
 
     return r;
 }
@@ -1478,7 +1487,7 @@ int gpt_disk_commit(struct gpt_disk *disk)
                 ALOGE("%s: Invalid args", __func__);
                 goto error;
         }
-        fd = open(disk->devpath, O_RDWR);
+        fd = open(disk->devpath, O_RDWR | O_DSYNC);
         if (fd < 0) {
                 ALOGE("%s: Failed to open %s: %s",
                                 __func__,
@@ -1510,6 +1519,7 @@ int gpt_disk_commit(struct gpt_disk *disk)
                                 __func__);
                 goto error;
         }
+        fsync(fd);
         close(fd);
         return 0;
 error:
@@ -1517,4 +1527,3 @@ error:
                 close(fd);
         return -1;
 }
-

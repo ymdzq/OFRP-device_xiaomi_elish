@@ -27,6 +27,7 @@ cc_library {
     cflags: [
         "-Wall",
         "-Werror",
+        "-Wno-unused-parameter",
     ],
     srcs: [
         "gpt-utils.cpp",
@@ -34,7 +35,7 @@ cc_library {
     ],
     owner: "qti",
     header_libs: [
-        "generated_kernel_headers",
+        "device_kernel_headers",
     ],
     export_include_dirs: ["."],
 }
