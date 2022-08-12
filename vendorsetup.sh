@@ -72,6 +72,8 @@
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	# export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
+	# 使用IMMENSITY-X内核
+	# export USE_CAF_KERNEL=1
 
 	# 当安装MIUI或者在MIUI上安装橙狐zip，使用magisk处理所有boot和recovery镜像，防止橙狐被MIUI官方recovery替换
 	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
