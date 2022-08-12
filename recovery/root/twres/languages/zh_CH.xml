@@ -673,8 +673,8 @@
 		<string name="arc_lvl_title">压缩</string>
 		
 		<string name="bkp_date">添加日期</string>
-		<string name="bkp_gen">生成备份名称</string>
-		<string name="bkp_gen_whilebkp">备份时生成备份名称</string>
+		<string name="bkp_gen">立即生成备份名称</string>
+		<string name="bkp_gen_whilebkp">等备份时再生成备份名称</string>
 		<string name="bkp_quick">快速备份</string>
 		<string name="bkp_clear">清空</string>
 		
@@ -740,7 +740,7 @@
 		<string name="new_key">使用新的键盘样式</string>
 		
 		<string name="bkp_nametitle">备份名称</string>
-		<string name="bkp_namesub">输入或自动生成备​​份名称</string>
+		<string name="bkp_namesub">输入或自动生成备份名称</string>
 		
 		<string name="goto_storage">存储</string>
 		
