@@ -821,13 +821,13 @@
 
 		<string name="unmount_sys_install">安装Zip前卸载系统分区</string>
 		<string name="unmount_system">正在卸载系统分区...</string>
-		<string name="unmount_system_err">卸载系统分区失败</string>		
+		<string name="unmount_system_err">卸载系统分区失败</string>
 
-		<string name="unmount_vendor_install">安装Zip前卸载 Vendor 分区</string>
+		<string name="unmount_vendor_install">安装Zip前卸载厂商分区</string>
 		<string name="unmount_vendor">正在卸载厂商分区...</string>
-		<string name="unmount_vendor_err">卸载厂商分区失败</string>	
+		<string name="unmount_vendor_err">卸载厂商分区失败</string>
 			
-		<string name="fbe_wipe_msg">警告： {1} 已被清除。为了设置初始FBE策略，FBE设备在清除之后需要重启进入安卓系统，不是重启进恢复模式</string>		
+		<string name="fbe_wipe_msg">警告： {1} 已被清除。为了设置初始FBE策略，FBE设备在清除之后需要重启进入安卓系统，不是重启进恢复模式</string>
 		<string name="fastboot_button">Fastboot</string>
 		<string name="enable_adb">启用 ADB</string>
 		<string name="enable_fastboot">启用 Fastboot</string>
