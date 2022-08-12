@@ -444,7 +444,7 @@
 		<string name="avg_backup_fs">文件系统的平均备份速度: {1} MB/s</string>
 		<string name="avg_backup_img">镜像设备的平均备份速度: {1} MB/s</string>
 		<string name="total_backed_size">[总计备份{1} MB]</string>
-		<string name="backup_completed">[备份完成，用时 {1} s]</string>
+		<string name="backup_completed">[备份完成，用时 {1} 秒]</string>
 		<string name="restore_started">[开始恢复]</string>
 		<string name="restore_folder">恢复文件夹: '{1}'</string>
 		<!-- {1} is the partition display name and {2} is the number of seconds -->
@@ -467,7 +467,7 @@
 		<string name="update_part_details_done">...完成</string>
 		<string name="wiping_dalvik">正在清除 Dalvik目录...</string>
 		<string name="cleaned">已清除：{1}...</string>
-		<string name="dalvik_done">-- Dalvik 缓存目录清除完成！</string>
+		<string name="dalvik_done">Dalvik 缓存目录清除完成！</string>
 		<string name="no_andsec">没有找到 Android Secure 分区。</string>
 		<string name="unable_to_locate">无法定位 {1}。</string>
 		<string name="wiping_datamedia">清除内部存储 -- /data/media...</string>
@@ -598,7 +598,7 @@
 		<string name="screenshot_saved">屏幕截图已保存至 {1}</string>
 		<string name="screenshot_err">截图失败！</string>
 		<string name="zip_wipe_cache">一个或多个 Zip 要求清除缓存分区，现在正在执行...</string>
-		<string name="and_sec_wipe_err">无法清除 android secure</string>
+		<string name="and_sec_wipe_err">无法清除 Android Secure</string>
 		<string name="dalvik_wipe_err">无法清除 Dalvik</string>
 		<string name="auto_gen">(自动生成)</string>
 		<string name="curr_date">(当前日期)</string>
@@ -642,7 +642,7 @@
 		<string name="enter_password_restore">密码</string>
 		<string name="enter_password_cptn">安全</string>
 		<!-- added by fordownloads -->
-		<string name="fordowns_sl">正在启动 Sideload ......</string>
+		<string name="fordowns_sl">正在启动 Sideload ...</string>
 		<string name="fordowns_to">至</string>
 		<string name="dbg">调试</string>
 		<string name="dbg_active">调试菜单已激活！</string>
@@ -789,7 +789,7 @@
 		<string name="verifying_digest" version="2">正在验证Digest</string>
 		<string name="skip_digest" version="2">根据用户设定，跳过 Digest 检查。</string>
 		<string name="decrypt_success_nodev">Data 解密成功</string>
-		<string name="no_digest_found" version="2">未找到 '{1}' 的 Digest 校验文件。 请取消勾选“启用 Digest 校验备份文件”复选框。</string>
+		<string name="no_digest_found" version="2">未找到 '{1}' 的 Digest 校验文件。请取消勾选“启用 Digest 校验备份文件”复选框。</string>
 		<string name="digest_fail_match" version="2">Digest 无法与 '{1}' 匹配。</string>
 		<string name="digest_matched" version="2">'{1}' 的 Digest 已匹配</string>
 		<string name="digest_check_skip" version="2">已启用跳过 Digest 检查</string>
@@ -994,7 +994,7 @@
 		<string name="magisk_not_found">未发现Magisk!</string>
 		<string name="magisk_not_found_1">您想到Fox插件中心</string>
 		<string name="magisk_not_found_2">安装预装的Magisk吗？</string>
-		<string name="magisk_not_found_3"/></string>
+		<string name="magisk_not_found_3"></string>
 		
 		<!-- MIUI OTA -->
 		<string name="fox_ota_settings">OTA设置</string>
