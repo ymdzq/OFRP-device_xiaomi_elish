@@ -61,6 +61,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ipa_adpl             0660   system     oem_2905
 /dev/synx_device          0660   root       camera
 /dev/hab                  0666   system     system
+/dev/hgsl                 0666   system     system
 /dev/iio:device*          0664   system     system
 
 #permissions for UFS RPMB BSG device node
@@ -175,12 +176,37 @@ firmware_directories /vendor/firmware_mnt/image/
 #qvr
 /dev/qvr_external_sensor_ioctl      0660  system  system
 /sys/kernel/qvr_external_sensor/fd  0660  system  system
+/dev/bus/usb/001/002      0660   system     system
+/dev/bus/usb/001/003      0660   system     system
+/dev/bus/usb/001/004      0660   system     system
+/dev/bus/usb/001/005      0660   system     system
+/dev/bus/usb/002/002      0660   system     system
+/dev/bus/usb/002/003      0660   system     system
+/dev/bus/usb/002/004      0660   system     system
+/dev/bus/usb/002/005      0660   system     system
+/dev/bus/usb/003/002      0660   system     system
+/dev/bus/usb/003/003      0660   system     system
+/dev/bus/usb/003/004      0660   system     system
+/dev/bus/usb/003/005      0660   system     system
+/dev/hidraw0              0660   system     system
+/dev/hidraw1              0660   system     system
+/dev/hidraw2              0660   system     system
+/dev/hidraw3              0660   system     system
+/dev/hidraw4              0660   system     system
+/dev/hidraw5              0660   system     system
+/dev/hidraw6              0660   system     system
+/dev/hidraw7              0660   system     system
+/dev/hidraw8              0660   system     system
+/dev/hidraw9              0660   system     system
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/wlan0/queues/rx-* rps_cpus           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/p2p0/queues/rx-* rps_cpus            0660   system     system
+/sys/devices/platform/soc/*.qcom,icnss/net/wlan*/queues/rx-* rps_cpus             0660   system     system
+/sys/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan*/queues/rx-* rps_cpus      0660   system     system
+/sys/devices/platform/soc/17a10040.qcom,wcn6750/net/wlan*/queues/rx-* rps_cpus    0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/i2c-7                0660   system     audio
 /dev/msm_camera/*         0660   system     camera
@@ -235,6 +261,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/i2c-5                0660   media       media
 /dev/avtimer              0660   system     audio
 /dev/spidev2.0            0660   system     audio
+/dev/spidev22.0           0660   system     audio
+/dev/spidev10.0           0660   system     audio
 
 # DVB devices
 /dev/dvb/adapter0/demux*  0440   media       media
@@ -390,6 +418,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
+#KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
+
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics
 /sys/class/graphics/fb*     res_info                 0664    system  graphics
@@ -420,6 +451,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
 */
+
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
 #asm330 sensor
 #common sensors files
