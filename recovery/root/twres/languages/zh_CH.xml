@@ -90,7 +90,7 @@
 		<string name="zip_queue_count">已选择 %tw_zip_queue_count% 个文件（最多 10 个）</string>
 		<string name="folder">文件夹</string>
 		<string name="file">文件</string>
-		<string name="zip_sig_chk">ZIP 文件签名校验</string>
+		<string name="zip_sig_chk">Zip 文件签名校验</string>
 		<string name="inject_twrp_chk">安装后注入 OrangeFox</string>
 		<string name="install_reboot_chk">安装完成后重启</string>
 		<string name="options_hdr">选项</string>
@@ -426,9 +426,9 @@
 		<string name="generating_md51">正在生成 MD5</string>
 		<!-- Message displayed during a backup if we are generating an MD5, ideally, leave the leading " * " to help align and separate this text from other console text -->
 		<string name="generating_md52"> * 正在生成MD5...</string>
-		<string name="md5_created"> * 已创建 MD5.</string>
+		<string name="md5_created"> * 已创建 MD5。</string>
 		<string name="md5_error"> * MD5 错误！</string>
-		<string name="md5_compute_error"> * 计算 MD5 出错.</string>
+		<string name="md5_compute_error"> * 计算 MD5 出错。</string>
 		<string name="current_date">(当前日期)</string>
 		<string name="auto_generate">(自动生成)</string>
 		<string name="unable_to_locate_partition">无法定位 '{1}' 分区进行备份计算。</string>
@@ -546,7 +546,7 @@
 		<string name="making_dir1">本地目录</string>
 		<string name="making_dir2">建立目录：'{1}'</string>
 		<string name="running_command">运行命令</string>
-		<string name="sideload">通过ADB操作</string>
+		<string name="sideload">ADB Sideload</string>
 		<string name="start_sideload">正在启用 ADB Sideload 特性...</string>
 		<string name="need_new_adb">您需要 ADB 1.0.32及以上版本以加载此设备。</string>
 		<string name="no_pwd">未输入密码。</string>
@@ -767,7 +767,7 @@
 		<string name="adb_backup_pc1">此备份将会</string>
 		<string name="adb_backup_pc2">保存在你的电脑上</string>
 		
-		<string name="starting_aroma">正在启动 Aromma 文件管理器...</string>
+		<string name="starting_aroma">正在启动 Aroma 文件管理器...</string>
 		<string name="lang_set_wait">正在更改语言...</string>
 		<string name="installing_theme">正在安装主题...</string>
 		
@@ -789,8 +789,8 @@
 		<string name="verifying_digest" version="2">正在验证Digest</string>
 		<string name="skip_digest" version="2">根据用户设定，跳过 Digest 检查。</string>
 		<string name="decrypt_success_nodev">Data 解密成功</string>
-		<string name="no_digest_found" version="2">未找到 ‘{1}’ 的 Digest 校验文件。 请取消勾选“启用 Digest 校验备份文件”复选框。</string>
-		<string name="digest_fail_match" version="2">Digest 无法与 ‘{1}’ 匹配。</string>
+		<string name="no_digest_found" version="2">未找到 '{1}' 的 Digest 校验文件。 请取消勾选“启用 Digest 校验备份文件”复选框。</string>
+		<string name="digest_fail_match" version="2">Digest 无法与 '{1}' 匹配。</string>
 		<string name="digest_matched" version="2">'{1}' 的 Digest 已匹配</string>
 		<string name="digest_check_skip" version="2">已启用跳过 Digest 检查</string>
 		<string name="digest_off" version="2">关闭 Digest 生成</string>
@@ -895,7 +895,7 @@
 		<string name="module_remove_survival">移除所有 Survival 脚本</string>
 		<string name="fox_files_not_exist_1">文件不存在！</string>
 		<string name="fox_files_not_exist_2">请使用这个安装文件</string>
-		<string name="fox_files_not_exist_3">重新安装 Recovery。</string>
+		<string name="fox_files_not_exist_3">重新安装恢复模式。</string>
 
 		<!-- Customization -->
 		<string name="cust_new_ota_screen">运行 OTA 更新时显示更少的细节</string>
@@ -966,7 +966,7 @@
 		<string name="new_pass_info_1_gk">绘制新的手势密码以保护</string>
 		<string name="new_pass_info_2">OrangeFox 阻止未经授权的</string>
 		<string name="new_pass_info_3">访问</string>
-		<string name="new_pass_info_4">您需要再次输入密码.</string>
+		<string name="new_pass_info_4">您需要再次输入密码。</string>
 		<string name="new_pass_info_4_gk">您需要再次绘制手势密码</string>
 		<string name="new_pass_info_4_2">请再次输入密码。</string>
 		<string name="new_pass_info_4_2_gk">请再次绘制手势密码</string>
