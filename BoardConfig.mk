@@ -68,7 +68,11 @@ TW_INCLUDE_REPACKTOOLS := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery
+ifeq ($(USE_CAF_KERNEL),1)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/IMMENSITY-X/Image
+else
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+endif
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
