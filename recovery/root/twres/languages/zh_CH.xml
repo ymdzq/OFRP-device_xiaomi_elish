@@ -1228,14 +1228,14 @@
 		<string name="status_delimeter">状态栏分隔符</string>
 		<string name="status_delimeter_shadow">阴影</string>
 
-		<string name="mount_vab_partitions">在你重启恢复模式之前，设备可能无法装载超级分区。</string>
+		<string name="mount_vab_partitions">在你重启恢复模式之前，可能无法装载 Super 设备。</string>
 		<string name="merges_snapshots">合并快照</string>
 		<string name="merging_snapshots">正在合并快照...</string>
 		<string name="merging_snapshots_complete">快照已合并</string>
 		
-		<string name="unmap_super_devices">取消映射超级分区设备</string>
-		<string name="unmapping_super_devices">正在取消映射超级分区设备...</string>
-		<string name="unmap_super_devices_complete">已取消映射所有超级分区设备</string>
+		<string name="unmap_super_devices">取消映射 Super 设备</string>
+		<string name="unmapping_super_devices">正在取消映射 Super 设备...</string>
+		<string name="unmap_super_devices_complete">已取消映射所有 Super 设备</string>
 
 		<string name="auto_reflashtwrp_chk">安装 ROM 之后自动重刷 OrangeFox</string>
 		<string name="modified_ramdisk_error">ramdisk文件已被修改，无法创建需要安装的ramdisk。请使用fastboot boot 命令启动 OrangeFox 并再次尝试此选项，或者返回文件浏览并使用安装 Ramdisk 按钮将img文件安装为Recovery Ramdisk。</string>
