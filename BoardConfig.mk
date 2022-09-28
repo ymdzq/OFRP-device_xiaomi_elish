@@ -30,6 +30,9 @@ TARGET_USES_64_BIT_BINDER := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := elish,enuma
 
@@ -68,19 +71,20 @@ TW_INCLUDE_REPACKTOOLS := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery
-ifeq ($(USE_CAF_KERNEL),1)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/IMMENSITY-X/Image
-else
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-endif
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/elish
 TARGET_KERNEL_CONFIG := elish_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/elish
 
+# Kernel - prebuilt
+ifeq ($(USE_CAF_KERNEL),1)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/IMMENSITY-X/Image
+else
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+endif
 # Platform
 TARGET_BOARD_PLATFORM := kona
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650

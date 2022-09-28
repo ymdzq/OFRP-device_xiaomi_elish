@@ -1,3 +1,13 @@
+# Android device tree for Xiaomi M2105K81AC (elish)
+
+```
+#
+# Copyright (C) 2022 The Android Open Source Project
+# Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
 # 橙 狐 (OFRP) for Xiaomi Pad 5 Pro (elish)
 使用小米平板 5 Pro，MIUI 13（安卓12）制作，提取官方安卓12内核，适用于橙狐安卓12分支
 
