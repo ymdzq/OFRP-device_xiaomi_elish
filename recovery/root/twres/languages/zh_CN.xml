@@ -38,14 +38,14 @@
 		<resource name="orangefont" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
 
 		<!-- Partition display names -->
-		<string name="system">系统</string>
+		<string name="system">System</string>
 		<string name="system_image">System 镜像</string>
-		<string name="vendor">厂商</string>
+		<string name="vendor">Vendor</string>
 		<string name="vendor_image">Vendor 镜像</string>
-		<string name="boot">启动</string>
-		<string name="recovery">恢复</string>
-		<string name="cache">缓存</string>
-		<string name="data">数据</string>
+		<string name="boot">Boot</string>
+		<string name="recovery">Recovery</string>
+		<string name="cache">Cache</string>
+		<string name="data">Data</string>
 		<string name="sdcard">SD 卡</string>
 		<string name="internal">内部存储</string>
 		<string name="microsd">Micro SD 卡</string>
@@ -842,7 +842,7 @@
 		<string name="fox_incremental_ota_status_disabled">支持增量包状态：已禁用</string>
 		<string name="fox_incremental_package_detected">检测到增量包 {1}</string>
 		<string name="fox_survival_does_not_exist">OTA Survival 不存在！ 请先安装当前版本或是更高版本的完整 ROM！</string>
-		<string name="fox_install_detecting">检测到当前版本</string>
+		<string name="fox_install_detecting">检测当前版本</string>
 		<string name="fox_install_standard_detected">- 检测到标准包</string>
 		<string name="fox_install_miui_detected">- 检测到 MIUI 更新包</string>
 		<string name="fox_zip_have_bootloader">警告：检测到重新安装了由 '{1}' 调用的 Bootloader。</string>
