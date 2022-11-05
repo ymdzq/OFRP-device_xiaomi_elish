@@ -19,6 +19,7 @@
         vendor_framework_compatibility_matrix.xml
         vendor.xiaomi.cit.wifi@1.0_compatibility_matrix.xml
         vendor.xiaomi.cit.bluetooth@1.0_compatibility_matrix.xml
+        vendor.xiaomi.sensor.communicate@1.0_compatibility_matrix.xml
         dax_framework_compatibility_matrix.xml
 -->
 <compatibility-matrix version="4.0" type="framework">
@@ -1266,6 +1267,14 @@
         <version>1.0</version>
         <interface>
             <name>IVSIMService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.sensor.communicate</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorCommunicate</name>
             <instance>default</instance>
         </interface>
     </hal>
