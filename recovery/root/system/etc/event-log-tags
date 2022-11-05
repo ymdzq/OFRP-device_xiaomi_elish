@@ -319,6 +319,7 @@
 75002 sqlite_mem_alarm_alloc_attempt (attempts|1|4)
 75003 sqlite_mem_released (Memory released|1|2)
 75004 sqlite_db_corrupt (Database file corrupt|3)
+75099 wm_on_configuration_changed_called (Token|1|5),(Component Name|3),(Reason|3)
 76001 tts_speak_success (engine|3),(caller_uid|1),(caller_pid|1),(length|1),(locale|3),(rate|1),(pitch|1),(engine_latency|2|3),(engine_total|2|3),(audio_latency|2|3)
 76002 tts_speak_failure (engine|3),(caller_uid|1),(caller_pid|1),(length|1),(locale|3),(rate|1),(pitch|1)
 76003 tts_v2_speak_success (engine|3),(caller_uid|1),(caller_pid|1),(length|1),(request_config|3),(engine_latency|2|3),(engine_total|2|3),(audio_latency|2|3)
