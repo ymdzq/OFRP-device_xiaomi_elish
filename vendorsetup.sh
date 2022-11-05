@@ -94,9 +94,9 @@
 	# 尝试处理AVB2.0，防止橙狐被官方recovery替换
 	# export OF_PATCH_AVB20=1
 	# 使用指定的magisk
-	export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
+	# export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
 	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
-	export MAGISK_VER=25.1
+	# export MAGISK_VER=25.2
 	# 标记该设备肯定是原生Android 11+虚拟A/B（“VAB”）设备
 	export OF_VIRTUAL_AB_DEVICE=1
 	# 当修补recovery/boot镜像时，始终指示magiskboot v24+修补vbmeta标头（自动禁用avb验证？）
