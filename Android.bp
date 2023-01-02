@@ -6,5 +6,5 @@
 //
 
 soong_namespace {
-     imports: ["hardware/qcom-caf/bootctrl"],
+    imports: ["hardware/qcom-caf/bootctrl"],
 }
