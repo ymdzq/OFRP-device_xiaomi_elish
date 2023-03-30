@@ -4,6 +4,11 @@
 
 # mount point       fstype   device                   device2                flags
 
+/metadata           ext4     /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";wrappedkey;backup=1
+/data               f2fs     /dev/block/bootdevice/by-name/userdata          flags=display="Data";fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+/cache              ext4     /dev/block/bootdevice/by-name/rescue            flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
+/storage            ext4     /data/media/0                                   flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
+
 # Dynamic Partition
 /system_root        ext4     /dev/block/mapper/system                        flags=display="System";backup=0;logical;slotselect
 /system_ext         ext4     /dev/block/mapper/system_ext                    flags=display="System_ext";logical;slotselect
@@ -11,36 +16,37 @@
 /vendor             ext4     /dev/block/mapper/vendor                        flags=display="Vendor";logical;slotselect
 /odm                ext4     /dev/block/mapper/odm                           flags=display="Odm";logical;slotselect
 
-/metadata           ext4     /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";backup=1;wrappedkey
-/data               f2fs     /dev/block/bootdevice/by-name/userdata          flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
-/cache              ext4     /dev/block/bootdevice/by-name/rescue            flags=backup=1;wipeingui;wipeduringfactoryreset
-/cust               ext4     /dev/block/bootdevice/by-name/cust              flags=display="Cust";backup=1;flashimg=1
-
 # Boot
-/boot               emmc     /dev/block/bootdevice/by-name/boot              flags=slotselect;backup=1;flashimg=1;
-/dtbo               emmc     /dev/block/bootdevice/by-name/dtbo              flags=backup=1;display="Dtbo";slotselect;flashimg=1
-/vendor_boot        emmc     /dev/block/bootdevice/by-name/vendor_boot       flags=display="vendor_boot";slotselect;backup=1;flashimg=1
-/exaid              emmc     /dev/block/bootdevice/by-name/exaid             flags=display="exaid";backup=1;flashimg=1
-/vbmeta             emmc     /dev/block/bootdevice/by-name/vbmeta            flags=display="vbmeta";backup=1;slotselect;flashimg=1
-/vbmeta_system      emmc     /dev/block/bootdevice/by-name/vbmeta_system     flags=display="vbmeta_system";slotselect;backup=1;flashimg=1
-/logo               emmc     /dev/block/bootdevice/by-name/logo              flags=display="logo";backup=1;flashimg=1
-/misc               emmc     /dev/block/bootdevice/by-name/misc              flags=display="misc";backup=1;flashimg=1
+/boot               emmc     /dev/block/bootdevice/by-name/boot              flags=display="Boot";backup=1;flashimg=1;slotselect
+/dtbo               emmc     /dev/block/bootdevice/by-name/dtbo              flags=display="Dtbo";slotselect
+/vendor_boot        emmc     /dev/block/bootdevice/by-name/vendor_boot       flags=display="Vendor_Boot";backup=1;flashimg=1;slotselect
+/exaid              emmc     /dev/block/bootdevice/by-name/exaid             flags=display="Exaid"
+/vbmeta             emmc     /dev/block/bootdevice/by-name/vbmeta            flags=display="VBMeta";flashimg=1;slotselect
+/vbmeta_system      emmc     /dev/block/bootdevice/by-name/vbmeta_system     flags=display="VBMeta System";flashimg=1;slotselect
+/logo               emmc     /dev/block/bootdevice/by-name/logo              flags=display="Logo"
+/misc               emmc     /dev/block/bootdevice/by-name/misc              flags=display="Misc"
 
 # Persistent Firmware & Properties
+/cust               ext4     /dev/block/bootdevice/by-name/cust              flags=display="Cust"
+/cust_image         emmc     /dev/block/bootdevice/by-name/cust              flags=display="Cust";backup=1
 /persist            ext4     /dev/block/bootdevice/by-name/persist           flags=display="Persist"
-/persist_image      emmc     /dev/block/bootdevice/by-name/persist           flags=display="Persist";flashimg=1
+/persist_image      emmc     /dev/block/bootdevice/by-name/persist           flags=display="Persist";backup=1
 
 # Firmware partitions
-/bluetooth          vfat     /dev/block/bootdevice/by-name/bluetooth         flags=display="bluetooth";slotselect;fsflags="ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait"
-/bluetooth_image    emmc     /dev/block/bootdevice/by-name/bluetooth         flags=display="bluetooth";slotselect;backup=1;flashimg=1
-/dsp                vfat     /dev/block/bootdevice/by-name/dsp               flags=display="dsp";slotselect
-/dsp_image          emmc     /dev/block/bootdevice/by-name/dsp               flags=display="dsp";slotselect;backup=1;flashimg=1
+/bluetooth          vfat     /dev/block/bootdevice/by-name/bluetooth         flags=display="Bluetooth";slotselect;fsflags="ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait"
+/bluetooth_image    emmc     /dev/block/bootdevice/by-name/bluetooth         flags=display="Bluetooth";backup=1;slotselect
+/dsp                ext4     /dev/block/bootdevice/by-name/dsp               flags=display="DSP";slotselect
+/dsp_image          emmc     /dev/block/bootdevice/by-name/dsp               flags=display="DSP";backup=1;slotselect
 /modem              vfat     /dev/block/bootdevice/by-name/modem             flags=display="Modem";slotselect;fsflags="ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait"
-/modem_img          emmc     /dev/block/bootdevice/by-name/modem             flags=backup=1;display="Modem";slotselect;flashimg=1
-/efs1               emmc     /dev/block/bootdevice/by-name/modemst1          flags=backup=1;display=EFS
+/modem_img          emmc     /dev/block/bootdevice/by-name/modem             flags=display="Modem";backup=1;slotselect
+/devcfg             emmc     /dev/block/bootdevice/by-name/devcfg            flags=display="Devcfg";backup=1
+/spunvm             vfat     /dev/block/bootdevice/by-name/spunvm            flags=display="Spunvm";backup=1;fsflags="rw,noatime,shortname=lower,uid=1000,gid=1000,dmask=007,fmask=007,context=u:object_r:spunvm_file:s0 wait"
+
+# EFS partitions
+/efs1               emmc     /dev/block/bootdevice/by-name/modemst1          flags=display="EFS";backup=1
 /efs2               emmc     /dev/block/bootdevice/by-name/modemst2          flags=backup=1;subpartitionof=/efs1
 /efsc               emmc     /dev/block/bootdevice/by-name/fsc               flags=backup=1;subpartitionof=/efs1
 /efsg               emmc     /dev/block/bootdevice/by-name/fsg               flags=backup=1;subpartitionof=/efs1
 
 # Removable storage
-/usb_otg            auto     /dev/block/sdg1          /dev/block/sdg         flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
+/usb_otg            auto     /dev/block/sdg1          /dev/block/sdg         flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"

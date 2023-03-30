@@ -294,7 +294,6 @@
 61000 audioserver_binder_timeout (command|3)
 62000 input_interaction (windows|4)
 62001 input_focus (window|3)
-62198 input_dispatcher
 65537 exp_det_netlink_failure (uid|1)
 70000 screen_toggled (screen_state|1|5)
 70001 intercept_power (action|3),(mPowerKeyHandled|1),(mPowerKeyPressCounter|1)
