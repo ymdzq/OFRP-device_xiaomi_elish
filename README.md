@@ -1,5 +1,5 @@
 # 橙 狐 (OFRP) for Xiaomi Pad 5 Pro (elish)
-使用小米平板 5 Pro，MIUI 13（安卓12）制作，提取官方安卓12内核，适用于橙狐安卓12分支
+使用小米平板 5 Pro，MIUI 14（安卓13）制作，提取官方安卓13内核，适用于橙狐安卓12分支
 
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")
 
