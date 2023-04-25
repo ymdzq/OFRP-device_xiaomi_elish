@@ -20,6 +20,10 @@ recovery基本功能都可以正常使用，你是要让我用adb shell twrp命�
 平板5p比较k40除了多了杜比视界和一堆audio驱动，少了震动和nfc相关文件外，没有明显的软件不同
 所以感觉要从魔改twrp的界面显示功能上去着手处理，等一个大佬
 
+# 如何使用
+
+进入[Release](https://github.com/ymdzq/OFRP-device_xiaomi_elish/releases)中，根据介绍使用。
+
 # 如何构建
 下载OFRP源代码，克隆这个仓库放到相应的位置
 
