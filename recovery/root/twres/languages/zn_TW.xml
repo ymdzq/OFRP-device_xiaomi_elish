@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<display>Chinese Traditional</display>
+
+	<resources>
+		<!-- Font overrides - only change these if your language requires special characters -->
+		<resource name="status" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="bigfont" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="body1" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="body2" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="subhead" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="title" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="mainbutton" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="button" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="menu" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="input_fail" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="splash" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+
+		<resource name="font_l" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="font_m" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="font_s" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="font_b" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+
+		<resource name="keylabel" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="keylabel-bold" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="keylabel-num" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="keylabel-small" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="keylabel-longpress" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		
+		<resource name="Secondary" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="Secondary-title" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="caption" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		
+		<resource name="clock" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+		<resource name="info" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+
+		<resource name="fixed" type="fontoverride" filename="DroidSansFallback.ttf" scale="100" />
+		<resource name="orangefont" type="fontoverride" filename="DroidSansFallback.ttf" scale="100"/>
+
+		<!-- Partition display names -->
+		<string name="system">System</string>
+		<string name="system_image">System 映象</string>
+		<string name="vendor">Vendor</string>
+		<string name="vendor_image">Vendor 映象</string>
+		<string name="boot">Boot</string>
+		<string name="recovery">Recovery</string>
+		<string name="cache">Cache</string>
+		<string name="data">Data</string>
+		<string name="sdcard">SD 卡</string>
+		<string name="internal">內部儲存</string>
+		<string name="microsd">Micro SD 卡</string>
+		<string name="usbotg">USB OTG</string>
+		<string name="android_secure">Android Secure</string>
+		<string name="dalvik">Dalvik / ART 快取</string>
+		<!-- This is a rarely used partition on a Micro SD card for a very old app2sd system -->
+		<string name="sdext">SD-EXT</string>
+		<string name="adopted_data">已合併資料</string>
+		<string name="adopted_storage">已合併儲存</string>
+
+		<!-- GUI XML strings -->
+		<string name="twrp_watch_header">OrangeFox %fox_actual_build%</string>
+		<string name="cpu_temp">CPU: %tw_cpu_temp% &#xB0;C</string>
+		<string name="sort_by_name_asc">名稱</string>
+		<string name="sort_by_date_asc">日期</string>
+		<string name="sort_by_size_asc">大小</string>
+		<string name="sort_by_name_desc">名稱</string>
+		<string name="sort_by_date_desc">日期</string>
+		<string name="sort_by_size_desc">大小</string>
+		<string name="install_btn">安裝</string>
+		<string name="wipe_btn">清除</string>
+		<string name="backup_btn">備份</string>
+		<string name="restore_btn">還原</string>
+		<string name="mount_btn">掛載</string>
+		<string name="file_manager_btn">檔案</string>
+		<string name="advanced_btn">高階</string>
+		<string name="reboot_btn">重啟</string>
+		<string name="copy_log_btn">將日誌複製到 SD 卡</string>
+		<string name="install_zip_hdr">安裝壓縮包</string>
+		<string name="install_zip_btn">安裝壓縮包</string>
+		<string name="install_image_hdr">安裝映象檔案</string>
+		<string name="install_image_btn">安裝映象</string>
+		<string name="install_select_file_hdr">選擇檔案</string>
+		<string name="install_select_file_btn">選擇檔案</string>
+		<string name="adb_sideload_btn">ADB &amp; Sideload</string>
+		<string name="select_storage_hdr">選擇儲存裝置</string>
+		<string name="select_storage_btn">選擇儲存裝置</string>
+		<string name="queue_hdr">佇列</string>
+		<string name="raised_clearqueue_btn">清空佇列</string>
+		<string name="raised_viewqueue_btn">檢視佇列</string>
+		<string name="zip_queue_count">已選擇 %tw_zip_queue_count% 個檔案（最多 10 個）</string>
+		<string name="folder">資料夾</string>
+		<string name="file">檔案</string>
+		<string name="zip_sig_chk">Zip 檔案簽名校驗</string>
+		<string name="inject_twrp_chk">安裝後注入 OrangeFox</string>
+		<string name="install_reboot_chk">安裝完成後重啟</string>
+		<string name="options_hdr">選項</string>
+		<string name="zip_queue">佇列</string>
+		<string name="install_zip_count_hdr">正在安裝 %tw_zip_queue_count% 個檔案中的第 %tw_zip_index% 個</string>
+		<string name="working">正在處理...</string>
+		<string name="failed">失敗</string>
+		<string name="successful">成功</string>
+		<string name="wipe_cache_btn">清除快取</string>
+		<string name="reboot_system_btn">重啟系統</string>
+		<string name="reboot_recovery_btn">重啟恢復模式</string>
+		<string name="install_sel_target">選擇目標分割槽</string>
+		<string name="flash_image_select">分割槽</string>
+		<string name="flashing_image">正在安裝映象...</string>
+		<string name="image_flashed">映象安裝成功</string>
+		<string name="wipe_cache_dalvik_confirm">清除快取 &amp; Dalvik</string>
+		<string name="wipe_dalvik_confirm">清除 Dalvik</string>
+		<string name="wiping_cache_dalvik">正在清除快取 &amp; Dalvik...</string>
+		<string name="wipe_cache_dalvik_complete">快取 &amp; Dalvik 清除完成</string>
+		<string name="cache_dalvik_done">快取 &amp; Dalvik 清除完成</string>
+		<string name="swipe_wipe">滑動清除</string>
+		<string name="rebooting">重啟中...</string>
+		<string name="swipe_reboot">滑動重啟</string>
+		<string name="confirm_action">確認操作</string>
+		<string name="cancel_btn">取消</string>
+		<string name="wipe_hdr">清除</string>
+		<string name="factory_reset_hdr">恢復出廠設定</string>
+		<string name="factory_reset1">清除資料、快取和 Dalvik</string>
+		<string name="factory_reset2">(不包括內部儲存)</string>
+		<string name="factory_reset3">大多數情況下這是</string>
+		<string name="factory_reset4">你唯一需要的清除</string>
+		<string name="factory_reset5">(不包括使用者/鎖屏)</string>
+		<string name="factory_resetting">正在清除資料、快取和 Dalvik ...</string>
+		<string name="advanced_wipe_hdr">高階清除</string>
+		<string name="advanced_wipe_btn">高階清除</string>
+		<string name="wipe_enc_confirm">清除資料分割槽加密</string>
+		<string name="formatting_data">正在格式化資料分割槽...</string>
+		<string name="swipe_format_data">滑動以格式化資料分割槽</string>
+		<string name="factory_reset_complete">已恢復出廠設定</string>
+		<string name="sel_part_hdr">選擇分割槽</string>
+		<string name="wipe_sel_confirm">清除選定分割槽資料</string>
+		<string name="wiping_part">正在清除分割槽...</string>
+		<string name="wipe_complete">清除完成</string>
+		<string name="format_data_hdr">格式化資料分割槽</string>
+		<string name="format_data_btn">格式化資料分割槽</string>
+		<string name="format_data_ptr1">格式化資料分割槽將清除您的所有應用、</string>
+		<string name="format_data_ptr2">備份、圖片、影片、媒體檔案，並</string>
+		<string name="format_data_ptr3">移除內部儲存的加密。</string>
+		<string name="format_data_adopted">包括已合併儲存</string>
+		<string name="format_data_undo">此操作不可撤消。</string>
+		<string name="format_data_complete">資料分割槽格式化已完成</string>
+		<!-- Translator note: the word "yes" must remain English! -->
+		<string name="yes_continue">輸入 “yes” 以確認。</string>
+		<string name="part_opt_hdr">分割槽資訊</string>
+		<string name="file_sys_opt">分割槽選項</string>
+		<string name="part_mount_point">掛載點</string>
+		<string name="part_curr_fs">檔案系統</string>
+		<string name="part_present">存在</string>
+		<string name="part_removable">可移動</string>
+		<string name="part_yes">是</string>
+		<string name="part_no">否</string>
+		<string name="part_size">大小</string>
+		<string name="part_used">已使用</string>
+		<string name="part_free">空閒</string>
+		<string name="part_backup_size">備份大小</string>
+		<string name="resize_btn">調整檔案系統大小</string>
+		<string name="resize_confirm">調整分割槽大小</string>
+		<string name="resizing">正在調整大小...</string>
+		<string name="resize_complete">調整大小已完成</string>
+		<string name="swipe_resize">滑動以調整大小</string>
+		<string name="repair_btn">修復檔案系統</string>
+		<string name="repair_confirm">修復分割槽</string>
+		<string name="repairing">正在修復...</string>
+		<string name="repair_complete">修復完成</string>
+		<string name="swipe_repair">滑動以修復</string>
+		<string name="change_fs_btn">修改檔案系統</string>
+		<string name="change_fs_warn1">一些 ROM 或核心可能不支援</string>
+		<string name="change_fs_warn2">某些檔案系統。 請謹慎操作！</string>
+		<string name="change_fs_confirm">修改檔案系統</string>
+		<string name="formatting">正在格式化...</string>
+		<string name="format_complete">格式化已完成</string>
+		<string name="swipe_change_fs">滑動以更改</string>
+		<string name="back_btn">返回</string>
+		<string name="wipe_enc_btn">清除加密</string>
+		<string name="swipe_factory_reset">滑動以恢復出廠設定</string>
+		<string name="backup_hdr">備份</string>
+		<string name="encryption_hdr">啟用加密</string>
+		<string name="name">名稱</string>
+		<string name="enable_backup_comp_chk">啟用壓縮</string>
+		<string name="skip_md5_backup_chk">在備份過程中不生成 MD5</string>
+		<string name="disable_backup_space_chk">在備份前禁用可用空間檢查</string>
+		<string name="swipe_backup">滑動以備份</string>
+		<string name="backup_name_exists">已存在同名備份</string>
+		<string name="pass_not_match">密碼不匹配！</string>
+		<string name="partitions">分割槽</string>
+		<string name="progress">進度</string>
+		<string name="backup_complete">備份已完成</string>
+		<string name="restore_hdr">備份</string>
+		<string name="restore_backup_hdr">還原備份</string>
+		<string name="sel_backup_hdr">選擇備份</string>
+		<string name="restore_dec_fail">密碼錯誤，請重試！</string>
+		<string name="del_backup_confirm">刪除備份</string>
+		<string name="del_backup_confirm2">此操作無法撤消！</string>
+		<string name="deleting_backup">正在刪除備份...</string>
+		<string name="backup_deleted">備份已刪除</string>
+		<string name="swipe_delete">滑動以刪除</string>
+		<string name="restore_backup_date">備份日期</string>
+		<string name="restore_md5_chk">校驗備份檔案的 MD5 值</string>
+		<string name="restore_enable_md5_chk">啟用備份檔案 MD5 驗證</string>
+		<string name="restore_complete">還原已完成</string>
+		<string name="swipe_restore">滑動以恢復</string>
+		<string name="rename_backup_hdr">重新命名備份</string>
+		<string name="rename_backup_confirm">重新命名備份</string>
+		<string name="rename_backup_confirm2">此操作無法撤消！</string>
+		<string name="renaming_backup">正在重新命名備份...</string>
+		<string name="rename_backup_complete">備份重新命名完成</string>
+		<string name="swipe_to_rename">滑動以重新命名</string>
+		<string name="mount_hdr">掛載</string>
+		<string name="mount_sys_ro_chk">掛載系統和廠商分割槽為只讀</string>
+		<string name="decrypt_data_btn">解密資料分割槽</string>
+		<string name="disable_mtp_btn">禁用 MTP</string>
+		<string name="enable_mtp_btn">啟用 MTP</string>
+		<string name="usb_storage_hdr">USB 儲存</string>
+		<string name="usb_storage_btn">USB 儲存</string>
+		<string name="usb_stor_mnt1">USB 儲存已掛載</string>
+		<string name="usb_stor_mnt2">在安全地移除你的裝置之前</string>
+		<string name="usb_stor_mnt3">請務必將其從計算機中彈出！</string>
+		<string name="unmount_btn">取消掛載</string>
+		<string name="rb_system_btn">系統</string>
+		<string name="rb_poweroff_btn">關機</string>
+		<string name="rb_recovery_btn">恢復模式</string>
+		<string name="rb_bootloader_btn">Bootloader</string>
+		<string name="rb_theme">主題</string>
+		<string name="rb_download_btn">下載模式</string>
+		<string name="rb_edl_btn">EDL 模式</string>
+		<string name="turning_off">正在關閉......</string>
+		<string name="swipe_power_off">滑動以關機</string>
+		<string name="sys_ro">系統分割槽</string>
+		<string name="sys_ro_hdr">未修改的系統分割槽</string>
+		<string name="sys_rop1">OrangeFox 能夠不修改系統分割槽</string>
+		<string name="sys_rop2">，使您更容易</string>
+		<string name="sys_rop2a">進行官方更新。</string>
+		<string name="sys_rop3">OrangeFox 將無法阻止</string>
+		<string name="sys_rop4">原廠 ROM 刪除 OrangeFox 。</string>
+		<string name="sys_rop5">安裝 ZIP或 ADB 操作</string>
+		<string name="sys_rop6">可能仍會修改系統分割槽。</string>
+		<string name="sys_ro_never_show_chk">不再顯示</string>
+		<string name="sys_ro_keep_ro_btn">保持只讀</string>
+		<string name="swipe_allow_mod">滑動以允許修改</string>
+		<string name="settings_hdr">設定</string>
+		<string name="settings_cptn">常規</string>
+		<string name="use_rmrf_chk">使用 rm-rf 替代格式化操作</string>
+		<string name="use24clock_chk">使用 24 小時制</string>
+		<string name="rev_navbar_chk">反向導航按鍵佈局</string>
+		<string name="simact_chk">模擬操作，僅做主題測試</string>
+		<string name="simfail_chk">模擬操作失敗</string>
+		<string name="sel_tz_list">時區</string>
+		<string name="dialog_reset_theme_hdr">重置為預設值</string>
+		<!-- Translator note: if it does not make sense to translate the locations or if it makes more sense,
+				feel free to change the location listed or drop the location entirely and just call it UTC -6 -->
+		<string name="utcm11">(UTC -11) 薩摩亞, 中途島</string>
+		<string name="utcm10">(UTC -10) 夏威夷</string>
+		<string name="utcm9">(UTC -9) 阿拉斯加</string>
+		<string name="utcm8">(UTC -8) 太平洋時間</string>
+		<string name="utcm7">(UTC -7) 山地時間(美國和加拿大)</string>
+		<string name="utcm6">(UTC -6) 中部時間(美國和加拿大)</string>
+		<string name="utcm5">(UTC -5) 東部時間(美國和加拿大)</string>
+		<string name="utcm4">(UTC -4) 大西洋時間(加拿大)</string>
+		<string name="utcm3">(UTC -3) 巴西利亞, 布宜諾斯艾利斯</string>
+		<string name="utcm2">(UTC -2) 大西洋中部時間</string>
+		<string name="utcm1">(UTC -1) 維德角群島, 亞速爾群島</string>
+		<string name="utc0">(UTC  0) 倫敦, 都柏林, 里斯本</string>
+		<string name="utcp1">(UTC +1) 柏林, 布魯塞爾, 巴黎</string>
+		<string name="utcp2">(UTC +2) 雅典, 伊斯坦布林, 南非</string>
+		<string name="utcp3">(UTC +3) 莫斯科, 巴格達</string>
+		<string name="utcp4">(UTC +4) 阿布扎比, 第比利斯, 馬斯喀特</string>
+		<string name="utcp5">(UTC +5) 葉卡特琳堡, 伊斯蘭堡</string>
+		<string name="utcp6">(UTC +6) 阿拉木圖, 達卡, 科倫坡</string>
+		<string name="utcp7">(UTC +7) 曼谷, 河內, 雅加達</string>
+		<string name="utcp8">(UTC +8) 北京, 香港特別行政區, 臺北, 新加坡</string>
+		<string name="utcp9">(UTC +9) 東京, 漢城, 雅庫茨克</string>
+		<string name="utcp10">(UTC +10) 東澳大利亞, 關島</string>
+		<string name="utcp11">(UTC +11) 符拉迪沃斯託克, 索羅門羣島</string>
+		<string name="utcp12">(UTC +12) 奧克蘭, 惠靈頓, 斐濟</string>
+		<string name="tz_offset_hdr">時區偏移</string>	
+		<string name="tz_offset">偏移值</string>
+		<string name="sel_tz_offset">選擇時區偏移 (通常為 0): %tw_time_zone_guioffset%</string>
+		<string name="tz_offset_0">0</string>
+		<string name="tz_offset_15">15</string>
+		<string name="tz_offset_30">30</string>
+		<string name="tz_offset_45">45</string>
+		<string name="use_dst_chk">使用夏令時 (DST)</string>
+		<string name="curr_tz">當前時區: %tw_time_zone%</string>
+		<string name="curr_tz_s">當前時區：</string>
+		<string name="set_tz_btn">設定時區</string>
+		<string name="settings_screen_cptn">螢幕設定</string>
+		<string name="settings_screen_timeout_cptn">超時關閉</string>
+		<string name="settings_screen_timeout_cptn2">超時：</string>
+		<string name="timeout_unit">秒</string>
+		<string name="enable_timeout_chk">啟用螢幕超時</string>
+		<string name="screen_to_na">無法設定螢幕超時</string>
+		<string name="rotation_chk">旋轉</string>
+		<string name="screen_bright_slider">亮度：%tw_brightness_pct%%</string>
+		<string name="screen_bright_na">無法設定亮度</string>
+		<string name="vibration_hdr">振動</string>
+		<string name="button_vibration_hdr">已關閉按鈕振動</string>
+		<string name="kb_vibration_hdr">已關閉鍵盤振動</string>
+		<string name="act_vibration_hdr">已關閉觸控震動</string>
+		<string name="button_vibration">按鍵振動:</string>
+		<string name="kb_vibration">鍵盤振動:</string>
+		<string name="act_vibration">觸控振動:</string>
+		<string name="advanced_hdr">高階</string>
+		<string name="copy_log_confirm">將Log日誌複製至 SD 卡</string>
+		<string name="copying_log">正在複製日誌至 SD 卡...</string>
+		<string name="copy_log_complete">日誌已複製完成</string>
+		<string name="terminal_btn">終端</string>
+		<string name="dumlock_note1">關於 HTC Dumlock 的資訊</string>
+		<string name="dumlock_note2">請參閱：</string>
+		<string name="inject_twrp_btn">注入 OrangeFox</string>
+		<string name="inject_twrp_confirm">重新注入 OrangeFox</string>
+		<string name="injecting_twrp">正在重新注入 OrangeFox...</string>
+		<string name="inject_twrp_complete">OrangeFox 注入完成</string>
+		<string name="swipe_to_confirm">滑動以確認</string>
+		<string name="part_sd_hdr">SD 卡分割槽</string>
+		<string name="rem_sd">可移動儲存</string>
+		<string name="rem_sd_sel">選擇一個可移動裝置！</string>
+		<string name="invalid_partsd_sel">你必須選擇一個可移動裝置</string>
+		<string name="part_sd_lose">您將失去 SD 卡上的所有檔案!</string>
+		<string name="part_sdcard_sel_note_1">正在分割槽並刪除 SD 卡中的</string>
+		<string name="part_sdcard_sel_note_2">所有檔案！</string>
+		<string name="part_sd_undo">此操作無法撤消！</string>
+		<string name="part_sd_ext_sz">EXT 分割槽大小：</string>
+		<string name="btn_flat_ext4">EXT4</string>
+		<string name="btn_flat_ext3">EXT3</string>
+		<string name="btn_flat_more">+</string>
+		<string name="btn_flat_less">-</string>
+		<string name="part_sd_swap_sz">Swap 分割槽大小：</string>
+		<string name="file_system">檔案系統：</string>
+		<string name="swipe_part_sd">滑動以分割槽</string>
+		<string name="partitioning_sd">SD 卡分割槽中...</string>
+		<string name="partitioning_sd2">這將需要幾分鐘。</string>
+		<string name="part_sd_complete">分割槽完成。</string>
+		<string name="dumlock_hdr">HTC Dumlock</string>
+		<string name="dumlock_restore_btn">恢復初始啟動分割槽</string>
+		<string name="dumlock_restore_confirm">恢復初始啟動映象</string>
+		<string name="dumlock_restoring">正在恢復初始啟動映象...</string>
+		<string name="dumlock_restore_complete">恢復初始啟動映象完成</string>
+		<string name="dumlock_reflash_btn">重灌恢復模式</string>
+		<string name="dumlock_reflash_confirm">把恢復模式重灌到啟動分割槽</string>
+		<string name="dumlock_reflashing">正在把恢復模式安裝到啟動分割槽...</string>
+		<string name="dumlock_reflash_complete">把恢復模式安裝到啟動分割槽已完成</string>
+		<string name="dumlock_install_btn">安裝 Dumlock</string>
+		<string name="dumlock_install_confirm">安裝 HTC dumlock 檔案到 ROM</string>
+		<string name="dumlock_installing">正在安裝 HTC Dumlock...</string>
+		<string name="dumlock_install_complete">HTC Dumlock 安裝完成</string>
+		<string name="swipe_to_unlock">滑動解鎖</string>
+		<string name="fm_actions">操作</string>
+		<string name="fm_hdr">檔案</string>
+		<string name="fm_sel_file">選擇一個檔案或資料夾</string>
+		<string name="fm_type_folder">資料夾</string>
+		<string name="fm_type_file">檔案</string>
+		<string name="fm_copy_btn">複製</string>
+		<string name="fm_copying">正在複製...</string>
+		<string name="fm_move_btn">移動</string>
+		<string name="fm_moving">正在移動</string>
+		<string name="fm_chmod755_btn">設定許可權為 755</string>
+		<string name="fm_chmod755ing">設定許可權為 755</string>
+		<string name="fm_chmod644_btn">設定許可權為 644</string>
+		<string name="fm_chmod644ing">設定許可權為 644</string>
+		<string name="fm_chmod_btn">設定許可權</string>
+		<string name="fm_delete_btn">刪除</string>
+		<string name="fm_deleting">正在刪除</string>
+		<string name="fm_rename_btn">重新命名</string>
+		<string name="fm_renaming">重新命名中...</string>
+		<string name="fm_sel_dest">目標資料夾</string>
+		<string name="fm_rename_hdr">重新命名</string>
+		<string name="fm_set_perms_hdr">設定許可權</string>
+		<string name="fm_perms">許可權</string>
+		<string name="fm_complete">檔案已操作完成</string>
+		<string name="decrypt">解密</string>
+		<string name="data_part">資料分割槽</string>
+		<string name="encrypt_data_part">資料分割槽已加密</string>
+		<string name="sel_encrypt_backup">您已選擇一個加密備份。</string>
+		<string name="decrypt_data_enter_note1">請輸入密碼或</string>
+		<string name="decrypt_data_enter_note1a">請繪製解鎖圖案或</string>
+		<string name="decrypt_data_enter_note2">按返回鍵取消。</string>
+		<string name="decrypt_data_enter_pass">輸入密碼</string>
+		<string name="decrypt_data_failed_pattern">圖案錯誤！</string>
+		<string name="decrypt_try_again">請重試。</string>
+		<string name="decrypt_data_enter_pattern">繪製圖案</string>
+		<string name="decrypt_data_trying">正在嘗試解密</string>
+		<string name="term_s_hdr">終端</string>
+		<string name="adb_sideload_hdr">ADB Sideload</string>
+		<string name="sideload_wipe_dalvik_chk">清除 Dalvik 快取</string>
+		<string name="sideload_wipe_cache_chk">清除快取</string>
+		<string name="swipe_to_sideload">滑動以啟動 Sideload 模式</string>
+		<string name="sideload_confirm">ADB Sideload</string>
+		<string name="sideload_usage">使用方法：adb sideload 檔名.zip</string>
+		<string name="sideload_complete">ADB Sideload 已完成</string>
+		<string name="fix_contexts_hdr">修復 Contexts</string>
+		<string name="fix_contexts_confirm">修復 SELinux 環境</string>
+		<string name="fix_contexts_note1">注意：很少需要使用“修復許可權”。</string>
+		<string name="fix_contexts_note2">修復 SELinux Contexts 可能導致</string>
+		<string name="fix_contexts_note3">您的裝置啟動異常。</string>
+		<string name="swipe_to_fix_contexts">滑動以修復 Contexts</string>
+		<string name="fixing_contexts">正在修復 Contexts...</string>
+		<string name="fix_contexts_complete">Contexts 已修復完成</string>
+		<string name="reboot_hdr">重啟</string>
+		<string name="sel_storage_list">選擇儲存</string>
+		<string name="ok_btn">確定</string>
+		<string name="install_twrp_ramdisk">安裝恢復模式 Ramdisk</string>
+		<string name="install_kernel">安裝核心</string>
+		<string name="repack_backup_first">首先備份現有映象</string>
+		<string name="installing">正在安裝...</string>
+		<string name="install_complete">安裝完成</string>
+		<string name="decrypt_users">解密使用者</string>
+		<string name="backup_storage_undecrypt_warning">備份不包括使用者 {1} 的某些檔案，因為該使用者未解密。</string>
+		<string name="decrypting_user_fbe">正在嘗試為使用者 {1} 解密FBE...</string>
+		<string name="decrypt_user_success_fbe">使用者 {1} 已成功解密</string>
+		<string name="decrypt_user_fail_fbe">無法解密使用者 {1}</string>
+		<string name="decrypt_data_user">選定使用者</string>
+		<string name="data_users">使用者</string>
+
+		<!-- Various console messages - these consist of user displayed messages, oftentimes errors -->
+		<string name="no_kernel_selinux">核心不支援讀取 SELinux Contexts。</string>
+		<string name="full_selinux">存在完整的 SELinux 支援。</string>
+		<string name="no_selinux">沒有 SELinux 支援（無 libselinux）。</string>
+		<string name="mtp_enabled">已啟用 MTP</string>
+		<string name="mtp_disabled">已禁用 MTP</string>
+		<string name="mtp_crash">MTP 崩潰，不在啟動時啟用 MTP。</string>
+		<string name="decrypt_success">成功使用預設密碼解密。</string>
+		<string name="unable_to_decrypt">無法使用預設密碼解密， 您可能需要格式化資料分割槽。</string>
+		<string name="generating_md51">正在生成 MD5</string>
+		<!-- Message displayed during a backup if we are generating an MD5, ideally, leave the leading " * " to help align and separate this text from other console text -->
+		<string name="generating_md52"> * 正在生成MD5...</string>
+		<string name="md5_created"> * 已建立 MD5。</string>
+		<string name="md5_error"> * MD5 錯誤！</string>
+		<string name="md5_compute_error"> * 計算 MD5 出錯。</string>
+		<string name="current_date">(當前日期)</string>
+		<string name="auto_generate">(自動生成)</string>
+		<string name="unable_to_locate_partition">無法定位 '{1}' 分割槽進行備份計算。</string>
+		<string name="no_partition_selected">沒有選擇要備份的分割槽。</string>
+		<string name="total_partitions_backup"> * 要備份的分割槽數量: {1}</string>
+		<string name="total_backup_size"> * 資料總大小: {1}MB</string>
+		<string name="available_space"> * 可用空間: {1}MB</string>
+		<string name="unable_locate_storage">無法定位儲存裝置。</string>
+		<string name="no_space">可用的儲存空間不足。</string>
+		<string name="backup_started">[開始備份]</string>
+		<string name="backup_folder"> * 備份資料夾: {1}</string>
+		<string name="fail_backup_folder">建立備份資料夾失敗。</string>
+		<string name="avg_backup_fs">檔案系統的平均備份速度: {1} MB/s</string>
+		<string name="avg_backup_img">映象裝置的平均備份速度: {1} MB/s</string>
+		<string name="total_backed_size">[總計備份{1} MB]</string>
+		<string name="backup_completed">[備份完成，用時 {1} 秒]</string>
+		<string name="restore_started">[開始恢復]</string>
+		<string name="restore_folder">恢復資料夾: '{1}'</string>
+		<!-- {1} is the partition display name and {2} is the number of seconds -->
+		<string name="restore_part_done">[{1} 完成，用時 {2} 秒]</string>
+		<string name="verifying_md5">正在驗證 MD5</string>
+		<string name="skip_md5">根據使用者設定跳過 MD5 檢查。</string>
+		<string name="calc_restore">正在計算恢復詳情...</string>
+		<string name="restore_read_only">無法恢復 {1} -- 掛載為只讀。</string>
+		<string name="restore_unable_locate">無法定位要恢復的 '{1}' 分割槽。</string>
+		<string name="no_part_restore">沒有選擇要恢復的分割槽。</string>
+		<string name="restore_part_count">正在恢復 {1} 分割槽...</string>
+		<string name="total_restore_size">總計恢復大小 {1}MB</string>
+		<string name="updating_system_details">正在更新系統詳情</string>
+		<string name="restore_completed">[恢復完成，用時 {1} 秒]</string>
+		<!-- {1} is the path we could not open, {2} is strerror output -->
+		<string name="error_opening_strerr">開啟出錯：'{1}' ({2})</string>
+		<string name="unable_locate_part_backup_name">無法按如下備份名定位分割槽：'{1}'</string>
+		<string name="unable_find_part_path">無法在如下路徑找到分割槽：'{1}' </string>
+		<string name="update_part_details">正在更新分割槽詳情...</string>
+		<string name="update_part_details_done">...完成</string>
+		<string name="wiping_dalvik">正在清除 Dalvik目錄...</string>
+		<string name="cleaned">已清除：{1}...</string>
+		<string name="dalvik_done">Dalvik 快取目錄清除完成！</string>
+		<string name="no_andsec">沒有找到 Android Secure 分割槽。</string>
+		<string name="unable_to_locate">無法定位 {1}。</string>
+		<string name="wiping_datamedia">清除內部儲存 -- /data/media...</string>
+		<string name="unable_to_mount">無法掛載 {1}</string>
+		<string name="unable_to_mount_internal">無法掛載內建儲存</string>
+		<string name="unable_to_mount_storage">無法掛載儲存</string>
+		<string name="fail_decrypt">解密資料失敗。</string>
+		<string name="no_crypto_support">此構建版本的編譯不含加密支援。</string>
+		<string name="decrypt_success_dev">資料解密成功，新的塊裝置：'{1}'</string>
+		<string name="done">完成</string>
+		<string name="start_partition_sd">分割槽 SD 卡中...</string>
+		<string name="partition_sd_locate">無法定位要分割槽的裝置。</string>
+		<string name="ext_swap_size">額外分割槽和交換分割槽大小超出 SD 卡大小。</string>
+		<string name="remove_part_table">正在移除分割槽表...</string>
+		<string name="unable_rm_part">無法移除分割槽表。</string>
+		<string name="create_part">正在建立 {1} 分割槽...</string>
+		<string name="unable_to_create_part">無法建立 {1} 分割槽。</string>
+		<string name="format_sdext_as">格式化 sd-ext 為 {1}...</string>
+		<string name="part_complete">分割槽完成。</string>
+		<string name="unable_to_open">無法開啟 '{1}'。</string>
+		<string name="mtp_already_enabled">MTP 已啟用</string>
+		<string name="mtp_fail">啟用 MTP 失敗</string>
+		<string name="no_mtp">不含 MTP 支援</string>
+		<string name="mtp_base_path_missing">找不到 Media 儲存。無法啟用MTP。</string>
+		<string name="image_flash_start">[映象安裝已開始]</string>
+		<string name="img_to_flash">要安裝的映象：'{1}'</string>
+		<string name="flash_unable_locate">無法定位要安裝的 '{1}' 分割槽。</string>
+		<string name="no_part_flash">沒有選擇要安裝的分割槽。</string>
+		<string name="too_many_flash">選擇了太多要安裝的分割槽。</string>
+		<string name="invalid_flash">指定的安裝分割槽無效。</string>
+		<string name="flash_done">[映象安裝已完成]</string>
+		<string name="wiping">清除 {1}</string>
+		<string name="repair_not_exist">{1} 不存在！ 無法修復！</string>
+		<string name="repairing_using">使用 {2} 修復 {1}...</string>
+		<string name="unable_repair">無法修復 {1}。</string>
+		<string name="mount_data_footer">未能掛載 /data 從而無法找到 crypto footer（加密元資訊）。</string>
+		<!-- {1} is the folder name that we could not create, {2} is strerror output -->
+		<string name="create_folder_strerr">無法建立 '{1}' 資料夾 ({2})。</string>
+		<!-- {1} is the folder name that we could not mount, {2} is strerror output -->
+		<string name="fail_mount">掛載 '{1}' ({2}) 失敗</string>
+		<!-- {1} is the folder name that we could not unmount, {2} is strerror output -->
+		<string name="fail_unmount">取消掛載 '{1}' ({2}) 失敗</string>
+		<string name="cannot_resize">無法調整 {1} 的大小。</string>
+		<string name="repair_resize">調整大小前修復 {1}。</string>
+		<string name="unable_resize">無法調整 {1} 的大小。</string>
+		<string name="no_md5_found">找不到 '{1}' 的 MD5 檔案。 請取消選擇“啟用MD5驗證”以進行還原。</string>
+		<string name="md5_fail_match">匹配 '{1}' 的 MD5 失敗。</string>
+		<string name="fail_decrypt_tar">無法解密 tar 檔案'{1}'</string>
+		<string name="format_data_msg">您可能需重啟恢復環境才能再次使用 /data。</string>
+		<string name="format_data_err">無法格式化以移除加密。</string>
+		<string name="formatting_using">使用 {2} 格式化 {1}...</string>
+		<string name="unable_to_wipe">無法清除 {1}。</string>
+		<string name="cannot_wipe">分割槽 {1} 無法清除。</string>
+		<string name="remove_all">正在移除 '{1}' 下的所有檔案</string>
+		<string name="wiping_data">正在清除資料分割槽而不清除 /data/media ...</string>
+		<string name="backing_up">正在備份 {1}...</string>
+		<string name="backing">正在備份</string>
+		<string name="backup_size">'{1}' 的備份檔案大小為 0 位元組。</string>
+		<string name="datamedia_fs_restore">警告：此 /Data 備份是使用 {1} 檔案系統進行的！ 除非您更改回 {1} 否則備份可能無法啟動。</string>
+		<string name="restoring">正在恢復 {1}...</string>
+		<string name="restoring_hdr">正在還原...</string>
+		<string name="recreate_folder_err">無法重新建立 {1} 資料夾。</string>
+		<string name="img_size_err">映象檔案的大小超過目標裝置</string>
+		<string name="flashing">正在安裝 {1}...</string>
+		<string name="backup_folder_set">備份資料夾設為 '{1}'</string>
+		<string name="locate_backup_err">無法定位備份檔案 '{1}'</string>
+		<string name="set_restore_opt">設定恢復選項：'{1}':</string>
+		<string name="md5_check_skip">已設定跳過 MD5 檢查</string>
+		<string name="ors_encrypt_restore_err">無法使用 OpenRecoveryScript 來恢復加密的備份。</string>
+		<string name="mounting">正在掛載</string>
+		<string name="unmounting">正在取消掛載</string>
+		<string name="mounted">已掛載 '{1}'</string>
+		<string name="unmounted">已取消掛載 '{1}'</string>
+		<string name="setting">將'{1}'設為'{2}'</string>
+		<string name="setting_empty">將'{1}'設定為空</string>
+		<string name="making_dir1">新建目錄</string>
+		<string name="making_dir2">建立目錄：'{1}'</string>
+		<string name="running_command">執行命令</string>
+		<string name="sideload">ADB Sideload</string>
+		<string name="start_sideload">正在啟用 ADB Sideload 特性...</string>
+		<string name="need_new_adb">您需要 ADB 1.0.32及以上版本以載入此裝置。</string>
+		<string name="no_pwd">未輸入密碼。</string>
+		<string name="done_ors">處理指令碼檔案完成</string>
+		<string name="injecttwrp">正在將 OrangeFox 注入啟動映象...</string>
+		<string name="zip_err">安裝該檔案出錯 '{1}'</string>
+		<string name="installing_zip">正在安裝檔案  '{1}'</string>
+		<string name="select_backup_opt">設定備份選項：</string>
+		<string name="compression_on">啟用壓縮</string>
+		<string name="md5_off">關閉 MD5 生成</string>
+		<string name="backup_fail">備份失敗</string>
+		<string name="backup_clean">備份失敗. 清理備份資料夾。</string>
+		<string name="running_recovery_commands">正在執行 Recovery 命令...</string>
+		<string name="recovery_commands_complete">Recovery 命令已執行</string>
+		<string name="running_ors">正在執行 OpenRecoveryScript...</string>
+		<string name="ors_complete">OpenRecoveryScript 指令碼已執行</string>
+		<string name="no_updater_binary">在 Zip 檔案中找不到 “{1}”。</string>
+		<string name="check_for_md5">正在檢查 MD5 檔案...</string>
+		<string name="fail_sysmap">無法對映檔案 '{1}'</string>
+		<string name="verify_zip_sig">正在驗證 Zip 簽名...</string>
+		<string name="verify_zip_fail">Zip 檔案簽名驗證錯誤！</string>
+		<string name="verify_zip_done">Zip 檔案簽名驗證成功。</string>
+		<string name="zip_corrupt">Zip 檔案已損壞 ！</string>
+		<string name="no_md5">跳過 MD5 檢查：未找到 MD5 檔案</string>
+		<string name="md5_fail">MD5 與檔案不匹配</string>
+		<string name="md5_match">MD5 與檔案相匹配</string>
+		<string name="pid_signal">{1} 程序錯誤結束：{2}</string>
+		<string name="pid_error">{1} 程序錯誤結束：{2}</string>
+		<string name="install_dumlock">正在安裝 HTC Dumlock 至系統...</string>
+		<string name="dumlock_restore">正在恢復初始啟動分割槽...</string>
+		<string name="dumlock_reflash">正在把恢復模式重灌到啟動分割槽...</string>
+		<string name="run_script">正在執行 {1} 指令碼...</string>
+		<string name="split_backup">正在將備份檔案拆分為多個存檔...</string>
+		<string name="backup_error">建立備份時出錯。</string>
+		<string name="restore_error">恢復過程中出錯。</string>
+		<string name="split_thread">將執行緒 ID {1} 拆分為存檔 {2}</string>
+		<!-- These 2 items are saved in the data manager instead of resource manager, so %llu, etc is correct instead of {1} -->
+		<string name="file_progress">已完成 %llu , 共 %llu 個檔案 , 進度 %i%%</string>
+		<string name="size_progress">已完成 %lluMB , 共 %lluMB , 進度 %i%%</string>
+		<string name="decrypt_cmd">正在嘗試透過命令列解密資料分割槽。</string>
+		<string name="base_pkg_err">載入基本包失敗。</string>
+		<string name="simulating">模擬操作</string>
+		<string name="backup_cancel">備份已取消</string>
+		<string name="config_twrp">正在配置 OrangeFox...</string>
+		<string name="config_twrp_err">無法在此核心下配置 OrangeFox 。</string>
+		<string name="copy_log">已將恢復模式日誌複製到 {1}.</string>
+		<string name="max_queue">已達到最大 Zip 佇列！</string>
+		<string name="min_queue">已達到最小 Zip 佇列！</string>
+		<string name="screenshot_saved">螢幕截圖已儲存至 {1}</string>
+		<string name="screenshot_err">截圖失敗！</string>
+		<string name="zip_wipe_cache">一個或多個 Zip 要求清除快取分割槽，現在正在執行...</string>
+		<string name="and_sec_wipe_err">無法清除 Android Secure</string>
+		<string name="dalvik_wipe_err">無法清除 Dalvik</string>
+		<string name="auto_gen">(自動生成)</string>
+		<string name="curr_date">(當前日期)</string>
+		<string name="backup_name_len">備份名稱太長。</string>
+		<string name="backup_name_invalid">備份名稱 '{1}' 包含無效字元 '{1}'</string>
+		<string name="no_real_sdcard">未能在此裝置上找到 SD 卡！ 異常中止！</string>
+		<string name="cancel_sideload">正在取消 ADB Sideload...</string>
+		<string name="change_fs_err">更改檔案系統時出錯。</string>
+		<string name="change_fs_hdr">更改檔案系統</string>
+		<string name="theme_ver_err">自定義主題版本與 OrangeFox 版本不匹配。 將使用預設主題。</string>
+		<string name="up_a_level">..</string>
+
+		<!-- new-->
+		<string name="sel_color">選擇顏色</string>
+		<string name="s_color">顏色</string>
+		<string name="current_color">檔案系統：</string>
+		<string name="show_cpu_temp_bar">顯示CPU 溫度：</string>
+		<string name="ts_inform">資訊</string>
+		<string name="sel_splash_png">選擇啟動圖（.png）</string>
+		<string name="swipe_to_install">滑動以安裝</string>
+		<string name="swipe_to_install_img">滑動以安裝映象</string>
+		<string name="sel_image_type">選擇映象型別！</string>
+		<string name="zip_add_queue">新增到佇列</string>
+		<string name="part_fs_error_1">分割槽選項不</string>
+		<string name="part_fs_error_2">可用於此分割槽！</string>
+		<string name="new_file_system">新檔案系統：</string>
+		<string name="adb_sideload_opt">Sideload 選項</string>
+		<string name="about_hdr">關於</string>
+		<string name="author">作者</string>
+		<string name="credits">貢獻者</string>
+		<string name="version">版本</string>
+		<string name="set_password">設定密碼</string>
+		<string name="verifying_pas">驗證密碼</string>
+		<string name="dialog_offset_note">設定偏移值</string>
+		<string name="queue_no">#</string>
+		<string name="options_cptn">選項</string>
+		<string name="flash_img_confirm">安裝映象檔案</string>
+		<string name="also_wipes">同時清除</string>
+		<string name="confirm_wipe_cptn">確認清除</string>
+		<string name="storage_cptn">儲存</string>
+		<string name="enter_password_restore">密碼</string>
+		<string name="enter_password_cptn">安全</string>
+		<!-- added by fordownloads -->
+		<string name="fordowns_sl">正在啟動 Sideload ...</string>
+		<string name="fordowns_to">至</string>
+		<string name="dbg">除錯</string>
+		<string name="dbg_active">除錯選單已啟用！</string>
+		<string name="dbg_act">執行</string>
+		<string name="dbg_func">功能</string>
+		<string name="dbg_set">應用</string>
+		<string name="dbg_page">頁面</string>
+		<string name="dbg_overlay">覆蓋</string>
+		<string name="fm_none">無</string>
+		
+		<string name="cust_navbar_noug">Nougat</string>
+		<string name="cust_navbar_cls">經典樣式</string>
+		<string name="cust_navbar_accent">強調色</string>
+		<string name="cust_navbar_black">黑</string>
+		<string name="cust_navbar_white">使用白色按鈕</string>
+		<string name="cust_navbar_gray">使用灰色按鈕</string>
+		
+		<string name="fm_open">用...開啟</string>
+		<string name="fm_open_text">文字檔案</string>
+		<string name="fm_open_ZIP">可安裝ZIP</string>
+		
+		<string name="fm_open_backup">備份</string>
+		<string name="fm_open_makezip">壓縮</string>
+		<string name="fm_open_unpackzip">解壓存檔</string>
+		<string name="fm_open_image">可安裝映象</string>
+		<string name="arc_type">存檔型別</string>
+		<string name="arc_lvl">壓縮等級:</string>
+		<string name="arc_lvl_title">壓縮</string>
+		
+		<string name="bkp_date">新增日期</string>
+		<string name="bkp_gen">立即生成備份名稱</string>
+		<string name="bkp_gen_whilebkp">等備份時再生成備份名稱</string>
+		<string name="bkp_quick">快速備份</string>
+		<string name="bkp_clear">清空</string>
+		
+		<string name="language_cptn">語言</string>
+		<string name="cust_oth">其它</string>
+		
+		<string name="settings_general">常規</string>
+		<string name="settings_ui">自定義</string>
+		<string name="settings_screen">顯示</string>
+		<string name="settings_time">區域</string>
+		
+		<string name="lang_wait">請稍後...</string>
+		
+		<string name="settings_ui_status">狀態列</string>
+		<string name="settings_ui_battery">顯示電量圖示</string>
+		<string name="settings_ui_style">導航欄樣式</string>
+		<string name="settings_ui_color">導航欄背景</string>
+		
+		<string name="settings_backup_qbkp_custom">快速備份分割槽</string>
+		
+		<string name="settings_backup_name">備份名稱</string>
+		<string name="settings_backup_name_user">不更改</string>
+		<string name="settings_backup_name_auto">自動定義</string>
+		<string name="settings_backup_name_auto_hide">備份時</string>
+		
+		<string name="update_btn">更新</string>
+		<string name="include_kernel_log">包括核心日誌</string>
+		
+		<string name="fm_books">收藏夾</string>
+		<string name="fm_books_desc">長按以編輯此列表</string>
+		<string name="fm_books_edit">編輯此列表</string>
+		<string name="fm_books_desc_edit">長按以刪除專案</string>
+		<string name="fm_books_empty">(空)</string>
+		
+		<string name="fm_mkdir">新建資料夾</string>
+		<string name="fm_mkdir_folder">資料夾名稱</string>
+		
+		<string name="fm_path">輸入路徑</string>
+		<string name="fm_path2">路徑</string>
+		
+		<string name="no_os_title">是否確定？</string>
+		<string name="no_os_subtitle">系統分割槽為空</string>
+		
+		<string name="no_os1">未安裝系統！ 您確定</string>
+		<string name="no_osrb">要重啟嗎？</string>
+		<string name="no_ospo">要關機嗎？</string>
+		<string name="no_osrb_recovery">要重啟到恢復模式嗎？</string>
+		<string name="no_osrb_boot">要重啟到 Bootloader 嗎？</string>
+		<string name="no_osrb_down">要重啟到下載模式嗎？</string>
+		<string name="no_osrb_edl">要重啟到EDL模式嗎？</string>
+		
+		<string name="areb_confirm">重啟確認對話方塊</string>
+		<string name="areb_noos">未安裝系統</string>
+		<string name="opt_always">總是</string>
+		<string name="otp_never">從不</string>
+		
+		<string name="areb_off">關閉</string>
+		
+		<string name="restoredialog_readonly">永不顯示掛載系統只讀對話方塊</string>
+		
+		<string name="offset_wrong">錯誤的偏移值！</string>
+
+		<string name="new_key">鍵盤使用新的樣式</string>
+		
+		<string name="bkp_nametitle">備份名稱</string>
+		<string name="bkp_namesub">輸入或自動生成備份名稱</string>
+		
+		<string name="goto_storage">儲存</string>
+		
+		<string name="theme_apply">正在更新主題…</string>
+		<string name="theme_fonts">字型</string>
+		<string name="theme_style">樣式</string>
+		<string name="theme_accent">強調色</string>
+		<string name="theme_font_sel">主字型</string>
+		<string name="theme_sec_font_sel">次字型</string>
+		
+		<string name="of">/</string>
+		
+		<string name="sph_sph">啟動圖</string>
+		
+		<string name="real">實數</string>
+		<string name="info">資訊</string>
+		<string name="time_m">修改</string>
+		<string name="time_c">更改</string>
+		<string name="access">訪問</string>
+		<string name="fm_sums">校驗</string>
+		
+		<string name="use_fixed_font">終端（Terminal）使用等寬字型</string>
+
+		<string name="adb_backup_pc1">此備份將會</string>
+		<string name="adb_backup_pc2">儲存在你的電腦上</string>
+		
+		<string name="starting_aroma">正在啟動 Aroma 檔案管理器...</string>
+		<string name="lang_set_wait">正在更改語言...</string>
+		<string name="installing_theme">正在安裝主題...</string>
+		
+		<string name="menu_btn">選單</string>
+		
+		<string name="data_backup">資料</string>
+		<string name="autostorage">儲存</string>
+		<string name="install_reboot">將在 %tw_sleep% 秒內重啟</string>
+		<string name="cancel_reboot_btn">取消重啟</string>
+		<string name="skip_digest_backup_chk" version="2">生成備份時跳過 Digest</string>
+		<string name="restore_digest_chk" version="2">啟用 Digest 驗證備份</string>
+		<string name="restore_enable_digest_chk" version="2">啟用 Digest 驗證備份</string>
+		<string name="decrypt_data_vold_os_missing">Vold 解密所需的檔案丟失： {1}</string>
+		<string name="generating_digest1" version="2">生成 Digest</string>
+		<string name="generating_digest2" version="2"> * 生成 Digest…</string>
+		<string name="digest_created" version="2"> * Digest 已建立。</string>
+		<string name="digest_error" version="2"> * Digest 錯誤！</string>
+		<string name="digest_compute_error" version="2"> * 計算 Digest 時出錯</string>
+		<string name="verifying_digest" version="2">正在驗證 Digest</string>
+		<string name="skip_digest" version="2">根據使用者設定，跳過 Digest 檢查。</string>
+		<string name="decrypt_success_nodev">Data 解密成功</string>
+		<string name="no_digest_found" version="2">未找到 '{1}' 的 Digest 校驗檔案。請取消勾選“啟用 Digest 校驗備份檔案”覈取方塊。</string>
+		<string name="digest_fail_match" version="2">Digest 無法與 '{1}' 匹配。</string>
+		<string name="digest_matched" version="2">'{1}' 的 Digest 已匹配</string>
+		<string name="digest_check_skip" version="2">已啟用跳過 Digest 檢查</string>
+		<string name="digest_off" version="2">關閉 Digest 生成</string>
+		<string name="invalid_zip_format">無效的 Zip 檔案！</string>
+		<string name="check_for_digest" version="2">檢查 Digest 檔案中...</string>
+		<string name="no_digest" version="2">跳過 Digest 檢查：未找到 Digest 檔案</string>
+		<string name="digest_fail" version="2">Digest 不匹配</string>
+		<string name="digest_match" version="2">Digest 匹配</string>
+		<string name="password">密碼</string>
+		<string name="boot_slot">啟動槽位</string>
+		<string name="boot_slot_a">槽位 A</string>
+		<string name="boot_slot_use_a">切換到槽位 A</string>
+		<string name="boot_slot_b">槽位 B</string>
+		<string name="boot_slot_use_b">切換到槽位 B</string>
+		<string name="changing_boot_slot">正在更改啟動槽位</string>
+		<string name="changing_boot_slot_complete">已成功更改啟動槽位</string>
+		<string name="unable_set_boot_slot">將 Bootloader 啟動槽位更改為 {1} 時出錯</string>
+		<string name="flash_ab_inactive">正在將A/B Zip安裝到非活動槽位：{1}</string>
+		<string name="flash_ab_reboot">要安裝其他壓縮包，請重啟恢復模式以切換到已更新的槽位。</string>
+		<string name="flash_ab_both_slots">安裝到兩個槽位</string>
+		<string name="ozip_decrypt_decryption">正在啟動 Ozip 解密...</string>
+		<string name="ozip_decrypt_finish">Ozip 解密已完成！</string>
+		<string name="backup_storage_warning">備份 {1} 不包括內部儲存中的任何檔案，例如圖片或下載等。</string>
+		<string name="sha2_chk">使用 SHA2 進行雜湊</string>
+		<string name="disabled">未啟用</string>
+		<string name="enabled">已啟用</string>
+		<string name="zip_compatible_err">Zip Treble 相容性錯誤!</string>
+
+		<string name="unmount_sys_install">安裝Zip前解除安裝系統分割槽</string>
+		<string name="unmount_system">正在解除安裝系統分割槽...</string>
+		<string name="unmount_system_err">解除安裝系統分割槽失敗</string>
+
+		<string name="unmount_vendor_install">安裝Zip前解除安裝廠商分割槽</string>
+		<string name="unmount_vendor">正在解除安裝廠商分割槽...</string>
+		<string name="unmount_vendor_err">解除安裝廠商分割槽失敗</string>
+			
+		<string name="fbe_wipe_msg">警告： {1} 已被清除。為了設定初始FBE策略，FBE裝置在清除之後需要重啟進入安卓系統，不是重啟進恢復模式</string>
+		<string name="fastboot_button">Fastboot</string>
+		<string name="enable_adb">啟用 ADB</string>
+		<string name="enable_fastboot">啟用 Fastboot</string>
+		<string name="fastboot_console_msg">已進入 Fastboot 模式...</string>
+		<string name="data_media_fbe_msg">OrangeFox不會在FBE裝置上重新建立/data/media目錄。請重啟進入rom以建立/data/media目錄</string>
+
+		<!-- Console Messages -->
+		<string name="fox_incremental_ota_compatibility_chk">正在驗證增量包簽名...</string>
+		<string name="fox_incremental_ota_compatibility_false">增量包與此 ROM 不相容！</string>
+		<string name="fox_incremental_ota_compatibility_true">增量包相容此 ROM</string>
+		<string name="fox_incremental_ota_status_enabled">支援增量包狀態：已啟用</string>
+		<string name="fox_incremental_ota_status_disabled">支援增量包狀態：已禁用</string>
+		<string name="fox_incremental_package_detected">檢測到增量包 {1}</string>
+		<string name="fox_survival_does_not_exist">OTA Survival 不存在！ 請先安裝當前版本或是更高版本的完整 ROM！</string>
+		<string name="fox_install_detecting">檢測當前版本</string>
+		<string name="fox_install_standard_detected">- 檢測到標準包</string>
+		<string name="fox_install_miui_detected">- 檢測到 MIUI 更新包</string>
+		<string name="fox_zip_have_bootloader">警告：檢測到重新安裝了由 '{1}' 呼叫的 Bootloader。</string>
+		<string name="fox_no_space_ota_survival">內部儲存空間不足，無法建立 OTA Survival。</string>
+		<string name="fox_incremental_ota_res">OTA_RES -- 已完成</string>
+		<string name="fox_incremental_ota_res_run">正在執行 OTA_RES 程序...</string>
+		<string name="fox_incremental_ota_bak_run">正在執行 OTA_BAK 程序...</string>
+		<string name="fox_incremental_ota_bak">OTA_BAK -- 已完成</string>
+		<string name="fox_internal_fatal_i1">OrangeFox：致命錯誤！ 你不能將內部儲存備份到內部儲存上！</string>
+		<string name="fox_internal_fatal_i2">您必須將備份目標更改為 MicroSD 或是 USB-OTG。</string>
+		<string name="fox_internal_q1">OrangeFox - 內部儲存 - 注意！</string>
+
+		<string name="copy_kernel_log">已將核心日誌複製到 {1}</string>
+
+		<string name="of_run_process">等待 '{1}' 連線</string>
+		<string name="of_run_process_fail">無法完成 '{1}' 過程</string>
+		<string name="of_run_process_done">'{1}' 過程已完成</string>
+		<string name="of_dm_verity">成功修補DM-Verity</string>
+		<string name="of_dm_verity_off">DM-Verity未啟用</string>
+		<string name="of_encryption">成功修補強制加密</string>
+		<string name="of_encryption_off">未啟用強制加密</string>
+		<string name="of_fstab">檢測到 fstab：'{1}'</string>
+
+		<string name="install_remlatest">刪除最新的</string>
+		
+		<string name="backups_remove_all">所有備份</string>
+		<string name="backups_remove">刪除</string>
+		
+		<!-- OrangeFox Recovery - Pie Door theme -->
+
+		<string name="unpack">解壓</string>
+		<string name="repack">重新打包</string>
+
+		<string name="fox_save_load_aromafm_config_chk">儲存/載入 Aroma 檔案管理設定</string>
+		<string name="search_help">搜尋檔案和資料夾</string>
+		
+		<string name="reboot_to_take_effect">重啟以使改動生效</string>
+		<string name="fox_modules_hdr">Fox 外掛</string>
+		<string name="fox_modules_inst">安裝外掛</string>
+		<string name="backup_short_hdr">新建備份</string>
+		<string name="backups_wat">暫無備份</string>
+		
+		<string name="module_install">安裝</string>
+		<string name="module_uninstall">解除安裝</string>
+		<string name="remove_of_files">移除OrangeFox檔案</string>
+		<string name="module_initd">啟用 init.d 支援</string>
+		<string name="module_of_set">備份OrangeFox設定</string>
+		<string name="module_cam">啟用 Camera2API</string>
+		<string name="module_pass">移除密碼</string>
+		<string name="module_remove_survival">移除所有 Survival 指令碼</string>
+		<string name="fox_files_not_exist_1">檔案不存在！</string>
+		<string name="fox_files_not_exist_2">請使用這個安裝檔案</string>
+		<string name="fox_files_not_exist_3">重新安裝恢復模式。</string>
+
+		<!-- Customization -->
+		<string name="cust_new_ota_screen">執行 OTA 更新時顯示更少的細節</string>
+		<string name="fm_icons_simple">放大檔案圖示</string>
+		<string name="theme_engine_update">是否應用更改並重新載入?</string>
+		<string name="theme_engine_reset">重置主題並重新載入嗎？</string>
+		<string name="apply_btn">應用</string>
+		<string name="theme_hdr">主題</string>
+		
+		<string name="font_small">小</string>
+		<string name="font_norm">標準</string>
+		<string name="font_big">大</string>
+		<string name="font_size">字型大小</string>
+		<string name="cust_autoapply">不確認而應用主題</string>
+		<string name="cust_expand_list">自動展開列表</string>
+		
+		<string name="status_battery_style">電池樣式</string>
+		<string name="status_battery_circle">環形</string>
+		<!-- Status bar -->
+		<string name="status_clock_pos">時鐘位置</string>
+		<string name="status_clock_left">左側</string>
+		<string name="status_clock_center">居中</string>
+		<string name="status_clock_right">右側</string>
+		<string name="dark_title">使標題更暗</string>
+		<string name="separate_status">使狀態列更暗</string>
+		<string name="noshadow_title">顯示狀態列陰影</string>
+		<string name="hide_notch">隱藏劉海</string>
+		<!-- NavBar -->
+		<string name="navbar_title">導航欄</string>
+		<string name="navbar_onscreen">啟用導航欄</string>
+		<string name="show_slideout">顯示控制檯按鈕</string>
+		<string name="dark_nav">暗色</string>
+		<!-- Keyboard -->
+		<string name="keyboard_title">鍵盤</string>
+		<string name="keyboard_newstyle">新樣式</string>
+		<string name="keyboard_nums">數字行</string>
+		<string name="key_swipe">在鍵盤上滑動以清除全部</string>
+		<!-- Lockscreen -->
+		<string name="lockscreen_unlock">解鎖</string>
+		<string name="lockscreen_title">鎖屏</string>
+		<string name="lockscreen_style">鎖屏風格</string>
+		<string name="lockscreen_clock">時鐘</string>
+		<string name="lockscreen_icon">圖示</string>
+		<string name="lockscreen_btn">用按鈕替換滑塊</string>
+		<string name="lockscreen_info">顯示電池和CPU資訊</string>
+		<string name="lockscreen_quicklock">點選鎖定圖示鎖定螢幕</string>
+
+		<!-- OTA working page -->
+		<string name="ota_console_title">正在安裝 OTA...</string>
+		<string name="ota_simple_title">正在更新...</string>
+		<string name="ota_simple_log_btn">日誌</string>
+
+		<string name="battery">電量</string>
+
+		<!-- Pass -->
+		<string name="pass_gk">手勢密碼</string>
+		<string name="pass_classic">文字密碼</string>
+		<string name="pass_dis">禁用密碼</string>
+		<string name="pass_pin">PIN 碼</string>
+		
+		<string name="locked_info_1">恢復模式受到保護，以阻止</string>
+		<string name="locked_info_2">未經授權的訪問。</string>
+		<string name="locked_info_3">使用恢復模式功能</string>
+		<string name="locked_info_4">之前您需要輸入密碼。</string>
+		<string name="locked_info_4_gk">之前您需要繪製您的手勢密碼。</string>
+		
+		<string name="new_pass_info_1">輸入新密碼以保護</string>
+		<string name="new_pass_info_1_gk">繪製新的手勢密碼以保護</string>
+		<string name="new_pass_info_2">OrangeFox 阻止未經授權的</string>
+		<string name="new_pass_info_3">訪問</string>
+		<string name="new_pass_info_4">您需要再次輸入密碼。</string>
+		<string name="new_pass_info_4_gk">您需要再次繪製手勢密碼</string>
+		<string name="new_pass_info_4_2">請再次輸入密碼。</string>
+		<string name="new_pass_info_4_2_gk">請再次繪製手勢密碼</string>
+		
+		<string name="pass_page_block">當前上鎖方式</string>
+		<string name="pass_page_block_inf1">知道自己受到保護,</string>
+		<string name="pass_page_block_inf2">您可以睡個好覺</string>
+		<string name="pass_page_select">請選擇密碼型別</string>
+		
+		<!-- Utilities -->
+		<string name="more">更多</string>
+		<string name="hide">隱藏</string>
+		<string name="part_menu_hdr">管理分割槽</string>
+		<string name="run_adb_startup">啟動時執行 ADB</string>
+
+		<!-- MMGUI -->
+		<string name="mm_module_active">活動</string>
+		<string name="mm_module_mount">自動掛載</string>
+		<string name="mm_modules">模組</string>
+		<string name="mm_ver">Magisk 版本</string>
+		<string name="mm_mod_ver">模組版本</string>
+		<string name="mm_remove">下次啟動時移除模組</string>
+		<string name="mm_remove_hint">重啟以使改動生效</string>
+		<string name="mm_remove_reboot">重啟</string>
+		<string name="magisk_not_found">未發現Magisk!</string>
+		<string name="magisk_not_found_1">您想到Fox外掛中心</string>
+		<string name="magisk_not_found_2">安裝預裝的Magisk嗎？</string>
+		<string name="magisk_not_found_3"></string>
+		
+		<!-- MIUI OTA -->
+		<string name="fox_ota_settings">OTA設定</string>
+		<string name="fox_miui_ota_on">啟用 OTA</string>
+		<string name="fox_ota_on">啟用 OTA</string>
+		<string name="fox_patch_rom">Patch ROM</string>
+		<string name="fox_ota_lite">OTA &amp; ROM</string>
+		
+		<!-- About -->
+		<string name="abt_maintainer">維護人員</string>
+		<string name="abt_fd">主題建立者 &amp; 設計師</string>
+		<string name="abt_bork">CEO，網站 &amp; 介面</string>
+		<string name="abt_dj">構建系統，維護者簡介</string>
+		<string name="abt_front">前端開發者</string>
+		<string name="abt_back">後端開發者</string>
+		<string name="abt_device">裝置</string>
+		<string name="version_twrp">OrangeFox 版本</string>
+		<string name="build_type">構建型別</string>
+		<string name="abt_credits">貢獻者</string>
+		<string name="abt_trans">翻譯人員</string>
+		<string name="abt_changes">更新日誌</string>
+		<string name="abt_main_shrt">維護人員</string>
+		<string name="welcome_msg">歡迎進入 OrangeFox!</string>
+		<string name="welcome_msg2"><!-- If welcome message is too big in your lang, use this string --></string>
+		
+		<!-- Symlink -->
+		<string name="symlink_dir_name">連結到資料夾</string>
+		<string name="symlink_file_name">連結到檔案</string>
+		<string name="symlink_broken_name">失效連結</string>
+		<string name="symlink_folder">開啟實體資料夾</string>
+		<string name="symlink_file">開啟實體檔案</string>
+		
+		<!-- Files -->
+		<string name="files_show_hidden">顯示隱藏檔案</string>
+		<string name="files_auto_open">自動檢測檔案型別</string>
+		<string name="file_read">正在讀取檔案： {1}</string>
+		<string name="file_read_error">無法開啟檔案!</string>
+		<string name="file_read_error_size">檔案大於1.5MB！</string>
+		<string name="file_read_error_bin">無法讀取二進位制檔案！</string>
+		<string name="subs_wipe">清除 Substratum 疊加層</string>
+		<string name="sort_ex_all">所有檔案</string>
+		<string name="sort_ex_img">IMG 檔案</string>
+		<string name="sort_ex_zip">ZIP 檔案</string>
+		<string name="aroma_help">再按一次啟動 Aroma 檔案管理器</string>
+
+		<!-- this error will shown when recovery cannot create backup folder
+		 -->
+		<string name="backups_rw_error_1">儲存器已掛載</string>
+		<string name="backups_rw_error_2">為只讀!</string>
+
+		<!-- App mgr -->
+		<string name="appmgr_apps">應用程式</string>
+		<string name="appmgr_title">應用管理</string>
+
+		<!-- performance -->
+		<string name="perf_title">效能</string>
+		<string name="perf_conf_mode">恢復模式效能模式</string>
+		<string name="perf_conf_balance">均衡</string>
+		<string name="perf_conf_high">高效能</string>
+		<string name="perf_conf_batt">省電模式</string>
+
+		<string name="fox_led_title">LED設定</string>
+		<string name="fox_use_green_led">使用綠色 LED 燈</string>
+		<string name="fox_boot_fastcharge">強制快速充電</string>
+
+		<!-- OTA -->
+		<string name="fox_ota_msg_ready">您已準備好接收更新！</string>
+		<string name="fox_ota_msg_custom">啟用自定義ROM模式</string>
+		<string name="fox_ota_msg_reflash">請安裝完整的ROM！</string>
+		<string name="fox_advanced_stock_recovery">禁用原廠恢復模式</string>
+		<string name="fox_support_miui_ota_chk">支援 OTA</string>
+		<string name="fox_include_system_survival_chk">OTA Survival（含系統）</string>
+		<string name="fox_verify_incremental_ota_signature_chk">增量OTA簽名驗證</string>
+		<string name="fox_dmverity_chk">禁用 DM 檢驗</string>
+		<string name="fox_forced_encryption_chk">禁用強制加密</string>
+		<string name="FOX_DISABLE_OTA_AUTO_REBOOT_chk">安裝OTA後阻止自動重啟</string>
+		<string name="of_ota_reboot_disabled">OTA 更新完成。根據您的設定，已阻止自動重啟。</string>
+
+		<!-- Wipe format moved -->
+		<string name="wipe_format_moved_info1">注意：格式化資料分割槽移動到了</string>
+		<string name="wipe_format_moved_info2">分割槽管理介面</string>
+
+		<!-- R11 -->
+		<string name="gst_title">手勢導航</string>
+		<string name="gst_enable_all">開啟手勢</string>
+		<string name="gst_back">返回手勢</string>
+		<string name="gst_back_left">從左側</string>
+		<string name="gst_back_right">從右側</string>
+		<string name="gst_console_enable">從狀態列下滑開啟控制檯</string>
+		<string name="gst_navbar_error">一些設定已被隱藏</string>
+		<string name="gst_navbar_error_2">禁用手勢以顯示</string>
+
+		<string name="in">in</string>
+		<string name="con_digest_start">[Digest 開始建立]</string>
+		<string name="con_digest_error">分割槽列表為空！</string>
+		<string name="con_digest_cancel">正在取消...</string>
+		<string name="con_digest_complete">[Digest建立完成，用時 {1} 秒]</string>
+		<string name="digest_btn">建立 Digest</string>
+		<string name="digest_creating">正在建立 Digest...</string>
+		
+		<!-- 124/14354 files, 20/5412MB (5%)  -->
+		<string name="file_progress_v2">%llu/%llu 檔案，</string>
+		<string name="size_progress_v2">%llu/%llu MB (%i%%)</string>
+
+		<string name="navpan_new_design">新的導航面板設計</string>
+		<string name="full_partition_list">顯示額外可供備份的分割槽</string>
+
+		<string name="data_decrypted_reload">解密成功！</string>
+
+		<string name="install_queue_magisk_btn">新增 Magisk</string>
+		<string name="hint_ffiles_missing">您發現少了某些東西嗎？</string>
+		<string name="hint_ffiles_missing1">Fox 附加元件不可用</string>
+		<string name="hint_ffiles_missing2">OrangeFox 無法訪問</string>
+		<string name="hint_ffiles_missing3">相關檔案。如果 /data 被清除，</string>
+		<string name="hint_ffiles_missing4">請嘗試掛載 /data 或重新安裝 OrangeFox</string>
+		<string name="hint_ffiles_missing5"><!-- Use this line if this hint is too big in your language --></string>
+		<string name="hide_btn">隱藏提示</string>
+
+		<string name="info_dir_empty">資料夾為空</string>
+		<string name="info_dir_empty_hidden">一些檔案已被隱藏</string>
+
+		<string name="navbar_style_line">線條</string>
+		<string name="accent_in_titles">標題文字使用強調色</string>
+
+		<string name="backup_quick_info1">點選“快速備份”按鈕後，</string>
+		<string name="backup_quick_info2">這些分割槽將被選中</string>
+		<string name="mbyte">MB</string>
+		<string name="mbytesec">MB/s</string>
+		<string name="backup_av_files">檔案</string>
+		<string name="backup_av_img">映象</string>
+		<string name="backup_exp_size">預計大小</string>
+		<string name="time_minute">分鐘</string>
+		<string name="backup_av">平均時間</string>
+		<string name="backup_av1">您想要重置速度值</string>
+		<string name="backup_av2">為預設嗎？平均時間</string>
+		<string name="backup_av3">預測值可能不太準確</string>
+
+		<string name="cust_line_white">使用白線</string>
+		<string name="cust_line_gray">使用灰線</string>
+
+		<!-- Updated slot selection -->
+		<string name="slot_show">切換槽位</string>
+		<string name="slot_switch_a">切換槽位為 A</string>
+		<string name="slot_switch_b">切換槽位為 B</string>
+		<string name="slot_active_a">槽位 A 已啟用</string>
+		<string name="slot_active_b">槽位 B 已啟用</string>
+
+		<string name="theme_font_primary_tab">主選項</string>
+		<string name="theme_font_secondary_tab">輔助選項</string>
+		<string name="theme_font_size_tab">大小</string>
+		<string name="theme_font_select">選擇字型</string>
+
+		<string name="theme_fweight">字重</string>
+		<string name="theme_fweight_norm">預設</string>
+		<string name="theme_fweight_reg">常規</string>
+		<string name="theme_fweight_med">中等</string>
+
+		<string name="swipe_up_to_unlock">從螢幕底部向上滑動以解鎖</string>
+
+		<string name="spl_background">背景色</string>
+		<string name="spl_logo">Logo</string>
+		<string name="spl_white">白</string>
+		<string name="spl_black">黑</string>
+		<string name="spl_night">夜間</string>
+		<string name="spl_orange">橙色</string>
+		<string name="spl_accent">強調色</string>
+		<string name="spl_image">背景圖片</string>
+		<string name="spl_del_img">移除圖片</string>
+		<string name="hidden">隱藏</string>
+		<string name="spl_ofr">"OrangeFox Recovery"標籤</string>
+
+		<string name="batch_selected">%of_batch_count% 已選擇</string>
+		<string name="batch_title">批次操作</string>
+		<string name="batch_files_folders">檔案 &amp; 資料夾</string>
+
+		<string name="fm_action_folder">此資料夾上的操作</string>
+
+		<string name="tap_to_generate">點選此處進行計算</string>
+		<string name="calc_checksum">正在計算...</string>
+		<string name="cant_access_data">無法訪問資料。請手動掛載資料分割槽。</string>
+
+		<string name="backup_pass_wait">正在更改密碼</string>
+		<string name="pass_encrypt_error1">當資料加密時</string>
+		<string name="pass_encrypt_error2">您不能更改密碼！</string>
+
+		<string name="backup_encrypt_data_info">只有資料分割槽將會被加密</string>
+		
+		<!-- Missing functions from TWRP -->
+		<string name="img_advanced">高階安裝</string>
+		<string name="img_type">映象型別</string>
+		<string name="img_select_type">選擇映象型別</string>
+		<string name="repack_overwrite_warning">如果裝置之前已獲取Root許可權，則Root許可權已被覆蓋，需要重新安裝。</string>		
+
+		<string name="repack_backup_first">先備份現有映象</string>
+
+		<string name="unpack_error">解壓映象時出錯</string>
+		<string name="repack_error">重新打包映象時出錯</string>
+		<string name="unpacking_image">正在解包 {1}...</string>
+		<string name="repacking_image">正在重新打包 {1}...</string>
+		
+		<string name="fix_recovery_loop">修復恢復模式迴圈啟動</string>
+		<string name="fixing_recovery_loop">正在修復恢復模式迴圈啟動...</string>
+		<string name="fix_recovery_loop_complete">修復恢復模式迴圈啟動完成</string>
+		<string name="fixing_recovery_loop_patch">正在修補核心...</string>
+		<string name="fix_recovery_loop_patch_error">修補核心時出錯</string>
+		<string name="try_app">試試我們的APP！</string>
+		<string name="try_app_2">使用我們的新APP來</string>
+		<string name="try_app_3">檢查恢復模式的更新吧！ </string>
+		<string name="try_app_4">下載連結：</string>
+		<string name="try_app_5">https://app.orangefox.tech</string>
+		<string name="fm_edit_file">用 nano 編輯檔案</string>
+		<string name="fm_open_terminal_btn">在此處開啟終端</string>
+		<string name="batch_progress">進度</string>
+
+		<!-- R11.1 -->
+		<string name="custom_settings">%fox_compatibility_fox_device% 的自定義設定</string>
+		<string name="custom_settings_title">自定義設定</string>
+		<string name="tap_to_show">點選顯示</string>
+
+		<!-- Android Rescue Party trigger -->
+		<string name="rescue_party0">安卓救援隊觸發！可能的解決方案？嘗試：</string>
+		<string name="rescue_party1"> 1. 清除快取, 並且/或者</string>
+		<string name="rescue_party2"> 2. 格式化資料, 並且/或者</string>
+		<string name="rescue_party3"> 3. 清潔安裝你的ROM。</string>
+		<string name="rescue_party4">報告的問題是：</string>
+
+		<string name="restore_system_context">無法獲取 {1} 預設的context -- Android 可能無法啟動。</string>
+		
+		<string name="batch_progress">進度</string>
+		<string name="recovery_busy">恢復模式正忙</string>
+		<string name="status_delimeter">狀態列分隔符</string>
+		<string name="status_delimeter_shadow">陰影</string>
+
+		<string name="mount_vab_partitions">在你重啟恢復模式之前，可能無法裝載 Super 裝置。</string>
+		<string name="merges_snapshots">合併快照</string>
+		<string name="merging_snapshots">正在合併快照...</string>
+		<string name="merging_snapshots_complete">快照已合併</string>
+		
+		<string name="unmap_super_devices">取消對映 Super 裝置</string>
+		<string name="unmapping_super_devices">正在取消對映 Super 裝置...</string>
+		<string name="unmap_super_devices_complete">已取消對映所有 Super 裝置</string>
+
+		<string name="auto_reflashtwrp_chk">安裝 ROM 之後自動重刷 OrangeFox</string>
+		<string name="modified_ramdisk_error">ramdisk檔案已被修改，無法建立需要安裝的ramdisk。請使用fastboot boot 命令啟動 OrangeFox 並再次嘗試此選項，或者返回檔案瀏覽並使用安裝 Ramdisk 按鈕將img檔案安裝為Recovery Ramdisk。</string>
+		<string name="create_ramdisk_error">無法建立需要安裝的ramdisk。</string>
+		<string name="reflash_twrp">安裝當前使用的 OrangeFox</string>
+		<string name="reflashing_twrp">正在安裝 OrangeFox...</string>
+		<string name="reflash_twrp_complete">安裝 OrangeFox 已完成</string>
+	</resources>
+</language>
