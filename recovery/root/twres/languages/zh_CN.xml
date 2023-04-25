@@ -251,17 +251,17 @@
 		<string name="dialog_reset_theme_hdr">重置为默认值</string>
 		<!-- Translator note: if it does not make sense to translate the locations or if it makes more sense,
 				feel free to change the location listed or drop the location entirely and just call it UTC -6 -->
-		<string name="utcm11">(UTC-11) 萨摩亚, 中途岛</string>
+		<string name="utcm11">(UTC -11) 萨摩亚, 中途岛</string>
 		<string name="utcm10">(UTC -10) 夏威夷</string>
 		<string name="utcm9">(UTC -9) 阿拉斯加</string>
 		<string name="utcm8">(UTC -8) 太平洋时间</string>
-		<string name="utcm7">(UTC -7) 山地时间</string>
-		<string name="utcm6">(UTC -6) 中央标准时间</string>
-		<string name="utcm5">(UTC -5) 东部时间</string>
-		<string name="utcm4">(UTC -4) 大西洋时间</string>
-		<string name="utcm3">(UTC -3) 巴西, 布宜诺斯艾利斯</string>
+		<string name="utcm7">(UTC -7) 山地时间(美国和加拿大)</string>
+		<string name="utcm6">(UTC -6) 中部时间(美国和加拿大)</string>
+		<string name="utcm5">(UTC -5) 东部时间(美国和加拿大)</string>
+		<string name="utcm4">(UTC -4) 大西洋时间(加拿大)</string>
+		<string name="utcm3">(UTC -3) 巴西利亚, 布宜诺斯艾利斯</string>
 		<string name="utcm2">(UTC -2) 大西洋中部时间</string>
-		<string name="utcm1">(UTC -1) 亚速尔群岛, 佛得角</string>
+		<string name="utcm1">(UTC -1) 佛得角群岛, 亚速尔群岛</string>
 		<string name="utc0">(UTC  0) 伦敦, 都柏林, 里斯本</string>
 		<string name="utcp1">(UTC +1) 柏林, 布鲁塞尔, 巴黎</string>
 		<string name="utcp2">(UTC +2) 雅典, 伊斯坦布尔, 南非</string>
@@ -270,10 +270,10 @@
 		<string name="utcp5">(UTC +5) 叶卡特琳堡, 伊斯兰堡</string>
 		<string name="utcp6">(UTC +6) 阿拉木图, 达卡, 科伦坡</string>
 		<string name="utcp7">(UTC +7) 曼谷, 河内, 雅加达</string>
-		<string name="utcp8">(UTC +8) 北京, 新加坡, 香港</string>
+		<string name="utcp8">(UTC +8) 北京, 香港特别行政区, 台北, 新加坡</string>
 		<string name="utcp9">(UTC +9) 东京, 汉城, 雅库茨克</string>
 		<string name="utcp10">(UTC +10) 东澳大利亚, 关岛</string>
-		<string name="utcp11">(UTC +11) 符拉迪沃斯托克, 索罗门群岛</string>
+		<string name="utcp11">(UTC +11) 符拉迪沃斯托克, 所罗门群岛</string>
 		<string name="utcp12">(UTC +12) 奥克兰, 惠灵顿, 斐济</string>
 		<string name="tz_offset_hdr">时区偏移</string>	
 		<string name="tz_offset">偏移值</string>
