@@ -140,7 +140,7 @@
 		<string name="format_data_ptr2">备份、图片、视频、媒体文件，并</string>
 		<string name="format_data_ptr3">移除内部储存的加密。</string>
 		<string name="format_data_adopted">包括已合并存储</string>
-		<string name="format_data_undo">此操作不可撤销。</string>
+		<string name="format_data_undo">此操作不可撤消。</string>
 		<string name="format_data_complete">数据分区格式化已完成</string>
 		<!-- Translator note: the word "yes" must remain English! -->
 		<string name="yes_continue">输入 “yes” 以确认。</string>
@@ -193,7 +193,7 @@
 		<string name="sel_backup_hdr">选择备份</string>
 		<string name="restore_dec_fail">密码错误，请重试！</string>
 		<string name="del_backup_confirm">删除备份</string>
-		<string name="del_backup_confirm2">此操作无法撤销！</string>
+		<string name="del_backup_confirm2">此操作无法撤消！</string>
 		<string name="deleting_backup">正在删除备份...</string>
 		<string name="backup_deleted">备份已删除</string>
 		<string name="swipe_delete">滑动以删除</string>
@@ -225,7 +225,7 @@
 		<string name="rb_bootloader_btn">Bootloader</string>
 		<string name="rb_theme">主题</string>
 		<string name="rb_download_btn">下载模式</string>
-		<string name="rb_edl_btn">Edl模式</string>
+		<string name="rb_edl_btn">EDL 模式</string>
 		<string name="turning_off">正在关闭......</string>
 		<string name="swipe_power_off">滑动以关机</string>
 		<string name="sys_ro">系统分区</string>
@@ -234,12 +234,12 @@
 		<string name="sys_rop2">，使您更容易</string>
 		<string name="sys_rop2a">进行官方更新。</string>
 		<string name="sys_rop3">OrangeFox 将无法阻止</string>
-		<string name="sys_rop4">原厂 ROM 删除 OrangeFox .</string>
+		<string name="sys_rop4">原厂 ROM 删除 OrangeFox 。</string>
 		<string name="sys_rop5">安装 ZIP或 ADB 操作</string>
 		<string name="sys_rop6">可能仍会修改系统分区。</string>
 		<string name="sys_ro_never_show_chk">不再显示</string>
 		<string name="sys_ro_keep_ro_btn">保持只读</string>
-		<string name="swipe_allow_mod">滑动以允许进行修改</string>
+		<string name="swipe_allow_mod">滑动以允许修改</string>
 		<string name="settings_hdr">设置</string>
 		<string name="settings_cptn">常规</string>
 		<string name="use_rmrf_chk">使用 rm-rf 替代格式化操作</string>
@@ -307,9 +307,9 @@
 		<string name="copying_log">正在复制日志至 SD 卡...</string>
 		<string name="copy_log_complete">日志已复制完成</string>
 		<string name="terminal_btn">终端</string>
-		<string name="dumlock_note1">关于HTC Dumlock 的信息</string>
+		<string name="dumlock_note1">关于 HTC Dumlock 的信息</string>
 		<string name="dumlock_note2">请参阅：</string>
-		<string name="inject_twrp_btn">注入OrangeFox</string>
+		<string name="inject_twrp_btn">注入 OrangeFox</string>
 		<string name="inject_twrp_confirm">重新注入 OrangeFox</string>
 		<string name="injecting_twrp">正在重新注入 OrangeFox...</string>
 		<string name="inject_twrp_complete">OrangeFox 注入完成</string>
@@ -321,8 +321,8 @@
 		<string name="part_sd_lose">您将失去 SD 卡上的所有文件!</string>
 		<string name="part_sdcard_sel_note_1">正在分区并删除 SD 卡中的</string>
 		<string name="part_sdcard_sel_note_2">所有文件！</string>
-		<string name="part_sd_undo">此操作无法撤销！</string>
-		<string name="part_sd_ext_sz">EXT 分区大小:</string>
+		<string name="part_sd_undo">此操作无法撤消！</string>
+		<string name="part_sd_ext_sz">EXT 分区大小：</string>
 		<string name="btn_flat_ext4">EXT4</string>
 		<string name="btn_flat_ext3">EXT3</string>
 		<string name="btn_flat_more">+</string>
@@ -331,7 +331,7 @@
 		<string name="file_system">文件系统：</string>
 		<string name="swipe_part_sd">滑动以分区</string>
 		<string name="partitioning_sd">SD 卡分区中...</string>
-		<string name="partitioning_sd2">这将需要几分钟.</string>
+		<string name="partitioning_sd2">这将需要几分钟。</string>
 		<string name="part_sd_complete">分区完成。</string>
 		<string name="dumlock_hdr">HTC Dumlock</string>
 		<string name="dumlock_restore_btn">恢复初始启动分区</string>
@@ -388,7 +388,7 @@
 		<string name="sideload_wipe_cache_chk">清除缓存</string>
 		<string name="swipe_to_sideload">滑动以启动 Sideload 模式</string>
 		<string name="sideload_confirm">ADB Sideload</string>
-		<string name="sideload_usage">使用方法：ADB SideLoad 文件名.ZIP</string>
+		<string name="sideload_usage">使用方法：adb sideload 文件名.zip</string>
 		<string name="sideload_complete">ADB Sideload 已完成</string>
 		<string name="fix_contexts_hdr">修复 Contexts</string>
 		<string name="fix_contexts_confirm">修复 SELinux 环境</string>
@@ -408,7 +408,7 @@
 		<string name="install_complete">安装完成</string>
 		<string name="decrypt_users">解密用户</string>
 		<string name="backup_storage_undecrypt_warning">备份不包括用户 {1} 的某些文件，因为该用户未解密。</string>
-		<string name="decrypting_user_fbe">正在尝试为用户 {1} 解密FBE。。。</string>
+		<string name="decrypting_user_fbe">正在尝试为用户 {1} 解密FBE...</string>
 		<string name="decrypt_user_success_fbe">用户 {1} 已成功解密</string>
 		<string name="decrypt_user_fail_fbe">无法解密用户 {1}</string>
 		<string name="decrypt_data_user">选定用户</string>
@@ -543,7 +543,7 @@
 		<string name="unmounted">已取消挂载 '{1}'</string>
 		<string name="setting">将'{1}'设为'{2}'</string>
 		<string name="setting_empty">将'{1}'设置为空</string>
-		<string name="making_dir1">本地目录</string>
+		<string name="making_dir1">新建目录</string>
 		<string name="making_dir2">建立目录：'{1}'</string>
 		<string name="running_command">运行命令</string>
 		<string name="sideload">ADB Sideload</string>
@@ -580,7 +580,7 @@
 		<string name="dumlock_reflash">正在把恢复模式重装到启动分区...</string>
 		<string name="run_script">正在运行 {1} 脚本...</string>
 		<string name="split_backup">正在将备份文件拆分为多个存档...</string>
-		<string name="backup_error">创建备份时出误。</string>
+		<string name="backup_error">创建备份时出错。</string>
 		<string name="restore_error">恢复过程中出错。</string>
 		<string name="split_thread">将线程 ID {1} 拆分为存档 {2}</string>
 		<!-- These 2 items are saved in the data manager instead of resource manager, so %llu, etc is correct instead of {1} -->
@@ -608,7 +608,7 @@
 		<string name="cancel_sideload">正在取消 ADB Sideload...</string>
 		<string name="change_fs_err">更改文件系统时出错。</string>
 		<string name="change_fs_hdr">更改文件系统</string>
-		<string name="theme_ver_err">自定义主题版本与 OrangeFox 版本不匹配。 使用默认主题。</string>
+		<string name="theme_ver_err">自定义主题版本与 OrangeFox 版本不匹配。 将使用默认主题。</string>
 		<string name="up_a_level">..</string>
 
 		<!-- new-->
@@ -653,7 +653,7 @@
 		<string name="dbg_overlay">覆盖</string>
 		<string name="fm_none">无</string>
 		
-		<string name="cust_navbar_noug">安卓N样式</string>
+		<string name="cust_navbar_noug">Nougat</string>
 		<string name="cust_navbar_cls">经典样式</string>
 		<string name="cust_navbar_accent">强调色</string>
 		<string name="cust_navbar_black">黑</string>
@@ -786,7 +786,7 @@
 		<string name="digest_created" version="2"> * Digest 已创建。</string>
 		<string name="digest_error" version="2"> * Digest 错误！</string>
 		<string name="digest_compute_error" version="2"> * 计算 Digest 时出错</string>
-		<string name="verifying_digest" version="2">正在验证Digest</string>
+		<string name="verifying_digest" version="2">正在验证 Digest</string>
 		<string name="skip_digest" version="2">根据用户设定，跳过 Digest 检查。</string>
 		<string name="decrypt_success_nodev">Data 解密成功</string>
 		<string name="no_digest_found" version="2">未找到 '{1}' 的 Digest 校验文件。请取消勾选“启用 Digest 校验备份文件”复选框。</string>
@@ -795,7 +795,7 @@
 		<string name="digest_check_skip" version="2">已启用跳过 Digest 检查</string>
 		<string name="digest_off" version="2">关闭 Digest 生成</string>
 		<string name="invalid_zip_format">无效的 Zip 文件！</string>
-		<string name="check_for_digest" version="2">检查 Digest 文件中…</string>
+		<string name="check_for_digest" version="2">检查 Digest 文件中...</string>
 		<string name="no_digest" version="2">跳过 Digest 检查：未找到 Digest 文件</string>
 		<string name="digest_fail" version="2">Digest 不匹配</string>
 		<string name="digest_match" version="2">Digest 匹配</string>
@@ -1117,14 +1117,14 @@
 		<string name="info_dir_empty_hidden">一些文件已被隐藏</string>
 
 		<string name="navbar_style_line">线条</string>
-		<string name="accent_in_titles">标题中突出文字颜色</string>
+		<string name="accent_in_titles">标题文字使用强调色</string>
 
 		<string name="backup_quick_info1">点击“快速备份”按钮后，</string>
 		<string name="backup_quick_info2">这些分区将被选中</string>
 		<string name="mbyte">MB</string>
 		<string name="mbytesec">MB/s</string>
 		<string name="backup_av_files">文件</string>
-		<string name="backup_av_img">图片</string>
+		<string name="backup_av_img">镜像</string>
 		<string name="backup_exp_size">预计大小</string>
 		<string name="time_minute">分钟</string>
 		<string name="backup_av">平均时间</string>
@@ -1148,8 +1148,8 @@
 		<string name="theme_font_select">选择字体</string>
 
 		<string name="theme_fweight">字重</string>
-		<string name="theme_fweight_norm">默认值</string>
-		<string name="theme_fweight_reg">正常</string>
+		<string name="theme_fweight_norm">默认</string>
+		<string name="theme_fweight_reg">常规</string>
 		<string name="theme_fweight_med">中等</string>
 
 		<string name="swipe_up_to_unlock">从屏幕底部向上滑动以解锁</string>
@@ -1212,7 +1212,7 @@
 		<!-- R11.1 -->
 		<string name="custom_settings">%fox_compatibility_fox_device% 的自定义设置</string>
 		<string name="custom_settings_title">自定义设置</string>
-		<string name="tap_to_show">点击以显示</string>
+		<string name="tap_to_show">点击显示</string>
 
 		<!-- Android Rescue Party trigger -->
 		<string name="rescue_party0">安卓救援队触发！可能的解决方案？尝试：</string>
