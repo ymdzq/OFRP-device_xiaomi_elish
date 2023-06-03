@@ -10,6 +10,3 @@ ro.charger.enable_suspend=1
 
 # Reset allocatable space
 ro.dynamic.full_size=9126805504
-
-# Timezone
-persist.sys.timezone=Asia/Shanghai

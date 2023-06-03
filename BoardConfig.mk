@@ -153,9 +153,6 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 # Load drivers
 TW_LOAD_VENDOR_MODULES := "exfat.ko"
 
-# Language
-TW_DEFAULT_LANGUAGE := "zh_CN"
-
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true

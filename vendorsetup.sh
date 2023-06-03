@@ -6,6 +6,7 @@
 #
 # 关于橙狐变量详见 OrangeFox_10/fox_10.0/vendor/recovery/orangefox_build_vars.txt
 
+	export TW_DEFAULT_LANGUAGE="zh_CN"
 	export LC_ALL="C"
 	export ALLOW_MISSING_DEPENDENCIES=true
 
@@ -117,5 +118,7 @@
 	export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
 	# 标记该设备为recovery存在于vendor_boot分区中的设备（如k50之类的rec既不在boot分区里也没有独立rec分区的设备）
 	# export OF_VENDOR_BOOT_RECOVERY=1
+	# 设置默认时区为北京时间
+	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 
 	echo -e "\x1b[96melish: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
