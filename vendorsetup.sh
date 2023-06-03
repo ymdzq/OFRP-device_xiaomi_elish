@@ -94,7 +94,7 @@
 	# 设置一个很老的build时间，用于解决某些ROM例如MIUI刷机脚本里的防回滚保护检测
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 	# 使小米平板5 Pro和小米平板5 Pro 5G都能刷入橙狐zip卡刷包
-	export TARGET_DEVICE_ALT="elish, enuma"
+	# export TARGET_DEVICE_ALT="elish, enuma"
 	# 使橙狐可以刷入具有机型检测限制为小米平板5 Pro或者小米平板5 Pro 5G的zip卡刷包，与TARGET_OTA_ASSERT_DEVICE冲突
 	# export OF_TARGET_DEVICES="elish,enuma"
 
