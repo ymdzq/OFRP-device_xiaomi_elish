@@ -58,8 +58,13 @@
 	export OF_NO_MIUI_OTA_VENDOR_BACKUP=1
 	# 防止橙狐在解密后重新运行自启动进程
 	export OF_NO_RELOAD_AFTER_DECRYPTION=1
+	# 禁用检查rom里的compatibility.zip
+	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
+	# 删除zip包里的AromaFM（有的设备用不了）
+	export FOX_DELETE_AROMAFM=1
 	# 使用CAF内核
 	export USE_CAF_KERNEL=1
+
 	## 硬件功能设定
 	# 没有绿色led
 	export OF_USE_GREEN_LED=0
@@ -72,8 +77,10 @@
 	## 界面显示设定
 	# 设置屏幕高度，状态栏高度，状态栏左右边距
 	# 由于橙狐默认屏幕比例是16：9,所以应设置屏幕高度为屏幕比例换算成n：9之后，n*120
-	export OF_SCREEN_H=1728
+	export OF_SCREEN_H=2560
+	# 状态栏高度（默认72像素，刘海屏设备按需设置）
 	# export OF_STATUS_H=60
+	# 状态栏左右避让宽度（默认20像素，顶部圆角设备按需设置）
 	# export OF_STATUS_INDENT_LEFT=48
 	# export OF_STATUS_INDENT_RIGHT=48
 	# 添加黑色状态栏（隐藏刘海）选项
@@ -83,7 +90,7 @@
 	# 禁止禁用导航栏
 	export OF_ALLOW_DISABLE_NAVBAR=0
 
-	## 使刷机包兼容小米平板5 Pro和小米平板5 Pro 5G
+	## 调整刷入zip刷机包时刷机脚本要检测的相关属性
 	# 设置一个很老的build时间，用于解决某些ROM例如MIUI刷机脚本里的防回滚保护检测
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 	# 使小米平板5 Pro和小米平板5 Pro 5G都能刷入橙狐zip卡刷包
@@ -93,6 +100,7 @@
 
 	# 尝试处理AVB2.0，防止橙狐被官方recovery替换
 	# export OF_PATCH_AVB20=1
+
 	# 使用指定的magisk
 	# export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
 	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
@@ -105,5 +113,9 @@
 	export OF_DYNAMIC_FULL_SIZE=9126805504
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
 	export OF_UNBIND_SDCARD_F2FS=1
+	# 禁止把橙狐永久刷入vab设备，并且，禁止在安装 ROM 之后自动重刷橙狐
+	export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
+	# 标记该设备为recovery存在于vendor_boot分区中的设备（如k50之类的rec既不在boot分区里也没有独立rec分区的设备）
+	# export OF_VENDOR_BOOT_RECOVERY=1
 
 	echo -e "\x1b[96melish: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
