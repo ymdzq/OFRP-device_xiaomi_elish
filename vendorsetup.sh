@@ -87,6 +87,8 @@
 	export OF_NO_MIUI_OTA_VENDOR_BACKUP=1
 	# 防止橙狐在解密后重新运行自启动进程
 	export OF_NO_RELOAD_AFTER_DECRYPTION=1
+	# 使用CAF内核
+	export USE_CAF_KERNEL=1
 	# 设置一个很老的build时间，用于解决某些ROM例如MIUI刷机脚本里的防回滚保护检测
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 	# 尝试处理AVB2.0，防止橙狐被官方recovery替换

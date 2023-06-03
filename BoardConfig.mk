@@ -82,10 +82,13 @@ TARGET_KERNEL_CONFIG := elish_defconfig
 
 # Kernel - prebuilt
 ifeq ($(USE_CAF_KERNEL),1)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 else
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 endif
+
+# Kenel dtb
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 
 # Platform
 TARGET_BOARD_PLATFORM := kona
@@ -135,7 +138,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
-TW_NO_SCREEN_BLANK := true
+TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
