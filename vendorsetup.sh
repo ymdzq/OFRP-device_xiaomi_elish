@@ -47,6 +47,8 @@
 
 	# 当安装MIUI或者在MIUI上安装橙狐zip，使用magisk处理所有boot和recovery镜像，防止橙狐被MIUI官方recovery替换
 	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
+	# 不生成recovery的zip刷机包
+	export FOX_DISABLE_UPDATEZIP=1
 	# 避免在已加密设备上应用强制加密补丁
 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 	# 跳过FBE解密流程（防止卡在橙狐LOGO或Redmi/Mi LOGO界面）
@@ -97,7 +99,7 @@
 	# 使小米平板5 Pro和小米平板5 Pro 5G都能刷入橙狐zip卡刷包
 	# export TARGET_DEVICE_ALT="elish, enuma"
 	# 使橙狐可以刷入具有机型检测限制为小米平板5 Pro或者小米平板5 Pro 5G的zip卡刷包，与TARGET_OTA_ASSERT_DEVICE冲突
-	# export OF_TARGET_DEVICES="elish,enuma"
+	# export FOX_TARGET_DEVICES="elish,enuma"
 
 	# 尝试处理AVB2.0，防止橙狐被官方recovery替换
 	# export OF_PATCH_AVB20=1
@@ -107,9 +109,9 @@
 	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
 	# export MAGISK_VER=25.2
 	# 当修补recovery/boot镜像时，始终指示magiskboot v24+修补vbmeta标头（自动禁用avb验证？）
-	export OF_PATCH_VBMETA_FLAG=1
+	export FOX_PATCH_VBMETA_FLAG=1
 	# 标记该设备肯定是原生Android 11+虚拟A/B（“VAB”）设备
-	export OF_VIRTUAL_AB_DEVICE=1
+	export FOX_VIRTUAL_AB_DEVICE=1
 	# 指定super分区的完整大小，修复部分设备刷入miui rom失败，VAB设备专用变量
 	export OF_DYNAMIC_FULL_SIZE=9126805504
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
@@ -117,7 +119,7 @@
 	# 禁止把橙狐永久刷入vab设备，并且，禁止在安装 ROM 之后自动重刷橙狐
 	export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
 	# 标记该设备为recovery存在于vendor_boot分区中的设备（如k50之类的rec既不在boot分区里也没有独立rec分区的设备）
-	# export OF_VENDOR_BOOT_RECOVERY=1
+	# export FOX_VENDOR_BOOT_RECOVERY=1
 	# 设置默认时区为北京时间
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 
