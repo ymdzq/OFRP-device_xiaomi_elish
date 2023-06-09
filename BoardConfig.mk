@@ -84,7 +84,7 @@ TARGET_KERNEL_CONFIG := elish_defconfig
 
 # Kernel - prebuilt
 ifeq ($(USE_CAF_KERNEL),1)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 else
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 endif
