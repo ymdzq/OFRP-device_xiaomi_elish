@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# 关于橙狐变量详见 OrangeFox_10/fox_10.0/vendor/recovery/orangefox_build_vars.txt
+# 关于橙狐变量详见 fox_12.1/vendor/recovery/orangefox_build_vars.txt
 
 	export TW_DEFAULT_LANGUAGE="zh_CN"
 	export LC_ALL="C"
@@ -16,10 +16,10 @@
 	export OF_MAINTAINER=ymdzq
 	# 设置版本号为日期
 	export FOX_VERSION=$(date +%y.%m.%d)
+	# 当你需要标记出这个recovery是一个特殊版本时使用
+	# export FOX_VARIANT=MIUI
 
 	## 添加功能
-	# 使用完整版ps命令
-	export FOX_REPLACE_BUSYBOX_PS=1
 	# 使用完整版getprop命令
 	export FOX_REPLACE_TOOLBOX_GETPROP=1
 	# 支持tar命令
@@ -45,20 +45,12 @@
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	# export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
 
-	# 当安装MIUI或者在MIUI上安装橙狐zip，使用magisk处理所有boot和recovery镜像，防止橙狐被MIUI官方recovery替换
-	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
 	# 不生成recovery的zip刷机包
 	export FOX_DISABLE_UPDATEZIP=1
-	# 避免在已加密设备上应用强制加密补丁
-	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 	# 跳过FBE解密流程（防止卡在橙狐LOGO或Redmi/Mi LOGO界面）
 	# export OF_SKIP_FBE_DECRYPTION=1
 	# 当ROM大于等于指定安卓SDK等级时，跳过FBE解密流程
 	# export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
-	# 在MIUI OTA还原期间尝试解密内部存储（而不是错误退出）
-	export OF_OTA_RES_DECRYPT=1
-	# 在准备MIUI OTA增量更新时不备份vendor_image
-	export OF_NO_MIUI_OTA_VENDOR_BACKUP=1
 	# 防止橙狐在解密后重新运行自启动进程
 	export OF_NO_RELOAD_AFTER_DECRYPTION=1
 	# 禁用检查rom里的compatibility.zip
@@ -101,13 +93,14 @@
 	# 使橙狐可以刷入具有机型检测限制为小米平板5 Pro或者小米平板5 Pro 5G的zip卡刷包，与TARGET_OTA_ASSERT_DEVICE冲突
 	# export FOX_TARGET_DEVICES="elish,enuma"
 
-	# 尝试处理AVB2.0，防止橙狐被官方recovery替换
-	# export OF_PATCH_AVB20=1
-
+	# 为“快速备份”指定默认选择的分区
+	export OF_QUICK_BACKUP_LIST="/boot;/data;"
+	# 禁用橙狐内置的magisk菜单
+	# export FOX_DELETE_MAGISK_ADDON=1
 	# 使用指定的magisk
 	# export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
 	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
-	# export MAGISK_VER=25.2
+	# export MAGISK_VER=26.1
 	# 当修补recovery/boot镜像时，始终指示magiskboot v24+修补vbmeta标头（自动禁用avb验证？）
 	export FOX_PATCH_VBMETA_FLAG=1
 	# 标记该设备肯定是原生Android 11+虚拟A/B（“VAB”）设备
