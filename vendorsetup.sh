@@ -29,6 +29,8 @@
 	# 使用bash代替sh和ash
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
+	# 添加橙狐的app管理器功能
+	export FOX_ENABLE_APP_MANAGER=1
 	# 使用完整版grep命令
 	export FOX_USE_GREP_BINARY=1
 	# 支持lzma, xz命令
