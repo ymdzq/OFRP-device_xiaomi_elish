@@ -11,14 +11,15 @@
 
 # Dynamic Partition
 /system_root        ext4     /dev/block/mapper/system                        flags=display="System";backup=0;logical;slotselect
-/system_ext         ext4     /dev/block/mapper/system_ext                    flags=display="System_ext";logical;slotselect
+/system_ext         ext4     /dev/block/mapper/system_ext                    flags=display="System Ext";logical;slotselect
 /product            ext4     /dev/block/mapper/product                       flags=display="Product";logical;slotselect
 /vendor             ext4     /dev/block/mapper/vendor                        flags=display="Vendor";logical;slotselect
-/odm                ext4     /dev/block/mapper/odm                           flags=display="Odm";logical;slotselect
+/odm                ext4     /dev/block/mapper/odm                           flags=display="ODM";logical;slotselect
+/mi_ext             ext4     /dev/block/mapper/mi_ext                        flags=display="Mi Ext";logical;slotselect
 
 # Boot
 /boot               emmc     /dev/block/bootdevice/by-name/boot              flags=display="Boot";backup=1;flashimg=1;slotselect
-/dtbo               emmc     /dev/block/bootdevice/by-name/dtbo              flags=display="Dtbo";slotselect
+/dtbo               emmc     /dev/block/bootdevice/by-name/dtbo              flags=display="Dtbo";slotselect;backup=1;flashimg=1
 /vendor_boot        emmc     /dev/block/bootdevice/by-name/vendor_boot       flags=display="Vendor_Boot";backup=1;flashimg=1;slotselect
 /exaid              emmc     /dev/block/bootdevice/by-name/exaid             flags=display="Exaid"
 /vbmeta             emmc     /dev/block/bootdevice/by-name/vbmeta            flags=display="VBMeta";flashimg=1;slotselect
