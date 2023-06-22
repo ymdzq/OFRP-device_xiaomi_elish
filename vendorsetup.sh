@@ -97,6 +97,8 @@
 
 	# 为“快速备份”指定默认选择的分区
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
+	# 将装载逻辑分区时的一些错误仅显示在日志里
+	export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 	# 禁用橙狐内置的magisk菜单
 	# export FOX_DELETE_MAGISK_ADDON=1
 	# 使用指定的magisk
