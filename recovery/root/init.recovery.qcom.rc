@@ -1,7 +1,7 @@
 import /init.recovery.qcom_decrypt.rc
 
 on early-fs
-    write /proc/sys/kernel/sched_lib_name "recovery,Updater,updater,update_engine_sideload"
+    write /proc/sys/kernel/sched_lib_name "recovery,magiskboot,Updater,updater,update_engine_sideload"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on fs
