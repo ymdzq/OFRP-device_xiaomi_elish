@@ -121,6 +121,8 @@
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 设置默认关闭夏令时
 	export TW_TIME_ZONE_GUIDST=0
+	# 跳过新版fstab处理
+	export OF_LEGACY_PROCESS_FSTAB=1
 
 	F=$(find "device" -name "elish")
 	# 修改启动画面背景色为#000000
