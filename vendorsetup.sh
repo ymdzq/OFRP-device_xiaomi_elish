@@ -119,8 +119,6 @@
 	# export FOX_VENDOR_BOOT_RECOVERY=1
 	# 设置默认时区为北京时间
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
-	# 设置默认关闭夏令时
-	export TW_TIME_ZONE_GUIDST=0
 	# 跳过新版fstab处理
 	export OF_LEGACY_PROCESS_FSTAB=1
 
