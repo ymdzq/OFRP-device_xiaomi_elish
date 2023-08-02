@@ -111,7 +111,7 @@
 	export FOX_VIRTUAL_AB_DEVICE=1
 	# 指定super分区的完整大小，修复部分设备刷入miui rom失败，VAB设备专用变量
 	export OF_DYNAMIC_FULL_SIZE=9126805504
-	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
+	# 在修复或格式化f2fs数据分区之前自动卸载绑定/sdcard
 	export OF_UNBIND_SDCARD_F2FS=1
 	# 禁止把橙狐永久刷入vab设备，并且，禁止在安装 ROM 之后自动重刷橙狐
 	export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
