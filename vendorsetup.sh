@@ -120,7 +120,7 @@
 	# 设置默认时区为北京时间
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 跳过新版fstab处理
-	export OF_LEGACY_PROCESS_FSTAB=1
+	# export OF_LEGACY_PROCESS_FSTAB=1
 
 	F=$(find "device" -name "elish")
 	# 修改启动画面背景色为#000000
