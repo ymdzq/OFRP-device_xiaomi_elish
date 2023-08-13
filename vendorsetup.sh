@@ -59,8 +59,6 @@
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	# 删除zip包里的AromaFM（有的设备用不了）
 	export FOX_DELETE_AROMAFM=1
-	# 使用CAF内核
-	export USE_CAF_KERNEL=1
 
 	## 硬件功能设定
 	# 没有绿色led
