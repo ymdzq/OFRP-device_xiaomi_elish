@@ -46,9 +46,12 @@ repo init -u https://github.com/mvaisakh/android_kernel_manifest.git -b eva-xiao
 repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
 ```
 手动下载[编译脚本](https://github.com/ymdzq/scripts/blob/main/elish.sh)放进eva-kernel文件夹  
-手动修改~/eva-kernel/kernel/msm-4.19/techpack/display/msm/dsi/dsi_panel.c文件，  
-把上面的那个commit添加的几行代码加入相应位置，保存  
-
+手动下载[修改补丁](https://github.com/ymdzq/scripts/blob/main/0001-HACK-Disable-dynamic-fps-and-set-refresh-rate-104.patch)放进eva-kernel/kernel/msm-4.19文件文件夹  
+用`git apply`命令打补丁
+```bash
+cd ~/eva-kernel/kernel/msm-4.19/
+git apply 0001-HACK-Disable-dynamic-fps-and-set-refresh-rate-104.patch
+```
 开始编译
 ```bash
 cd ~/eva-kernel
