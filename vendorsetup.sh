@@ -112,7 +112,7 @@
 	# 在修复或格式化f2fs数据分区之前自动卸载绑定/sdcard
 	export OF_UNBIND_SDCARD_F2FS=1
 	# 禁止把橙狐永久刷入vab设备，并且，禁止在安装 ROM 之后自动重刷橙狐
-	export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
+	# export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
 	# 标记该设备为recovery存在于vendor_boot分区中的设备（如k50之类的rec既不在boot分区里也没有独立rec分区的设备）
 	# export FOX_VENDOR_BOOT_RECOVERY=1
 	# 设置默认时区为北京时间
