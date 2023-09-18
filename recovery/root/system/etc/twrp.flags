@@ -10,7 +10,7 @@
 /storage            ext4     /data/media/0                                   flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
 
 # Dynamic Partition
-/system             ext4     /dev/block/mapper/system                        flags=display="System";backup=0;logical;slotselect
+/system             ext4     /dev/block/mapper/system                        flags=display="System";logical;slotselect
 /system_ext         ext4     /dev/block/mapper/system_ext                    flags=display="System Ext";logical;slotselect
 /product            ext4     /dev/block/mapper/product                       flags=display="Product";logical;slotselect
 /vendor             ext4     /dev/block/mapper/vendor                        flags=display="Vendor";logical;slotselect
