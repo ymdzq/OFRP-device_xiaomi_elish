@@ -48,7 +48,7 @@
 	# export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
 
 	# 不生成recovery的zip刷机包
-	export FOX_DISABLE_UPDATEZIP=1
+	# export FOX_DISABLE_UPDATEZIP=1
 	# 跳过FBE解密流程（防止卡在橙狐LOGO或Redmi/Mi LOGO界面）
 	# export OF_SKIP_FBE_DECRYPTION=1
 	# 当ROM大于等于指定安卓SDK等级时，跳过FBE解密流程
