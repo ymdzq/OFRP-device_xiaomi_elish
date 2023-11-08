@@ -22,9 +22,9 @@ recovery基本功能都可以正常使用
 （小米能不能放出一个靠谱的最新系统的内核源码？开源的还是安卓11）  
 建议在刷入之前最好利用root权限想办法在系统中备份vendor_boot分区，或者提取你原来的rom包里的vendor_boot镜像，以便在需要的时侯还原  
 
-提供一个自用MIUI 14.0.4.0内核备份，包含14.0.4.0原版boot、dtbo、vendor_boot以及修补过的面具boot文件，方便恢复  
-解压得到14.0.4.0、14.0.4.0_magisk两个文件夹，放入小米平板5Pro“内置存储/Fox/BACKUPS/数字字母组成的机器识别代码”的文件夹里（没有这个文件夹你可以先随便备份一次就有了），即可在recovery中识别备份，可勾选恢复相应分区  
-https://www.123pan.com/s/fRptVv-i8K4.html 提取码:BP89  
+提供一个自用MIUI 14.0.5.0内核备份，包含14.0.5.0原版boot、dtbo、vendor_boot文件，方便恢复  
+解压得到14.0.5.0文件夹，放入小米平板5Pro“内置存储/Fox/BACKUPS/数字字母组成的机器识别代码”的文件夹里（没有这个文件夹你可以先随便备份一次就有了），即可在recovery中识别备份，可勾选恢复相应分区  
+https://www.123pan.com/s/fRptVv-AgU4.html 提取码:eiGK  
 
 温馨提示：  
 vab设备刷入rom之后会设置下次启动另一个槽位，需要重启生效，  
@@ -45,6 +45,31 @@ git clone https://github.com/ymdzq/OFRP-device_xiaomi_elish.git elish
 ```bash
 . build/envsetup.sh && lunch twrp_elish-eng && mka bootimage
 ```
+# 云编译
+利用Github Action在线编译橙狐  
+例如你的 Github 用户名是 "JohnSmith"  
+1. 打开[橙狐Action编译器](https://github.com/ymdzq/OrangeFox-Action-Builder)仓库，然后在新页面点击右上角的`Fork`按钮  
+![image](https://user-images.githubusercontent.com/37921907/177914706-c92476c5-7e14-4fb3-be94-0c8a11dae874.png)
+2. 等待网页自动重定向后，你将会看到你的用户名下的新仓库  
+![image](https://user-images.githubusercontent.com/37921907/177915106-5bde6fc9-303c-479e-b290-22b48efd1e4e.png)
+3. 网页上方进入 `Actions` 页面 > `All workflows` > `OrangeFox - Build` > `Run workflow`  
+![image](https://user-images.githubusercontent.com/37921907/177915304-8731ed80-1d49-48c9-9848-70d0ac8f2720.png)
+4. 按照以下内容填写参数  
+OrangeFox Branch  
+`12.1`  
+Custom Recovery Tree  
+`https://github.com/ymdzq/OFRP-device_xiaomi_elish`  
+Custom Recovery Tree Branch  
+`fox_12.1-a13`  
+Specify your device path.  
+`device/xiaomi/elish`  
+Specify your Device Codename.  
+`elish`  
+Specify your Build Target  
+`boot`  
+![image](https://user-images.githubusercontent.com/37921907/177915346-71c29149-78fb-4a00-996f-5d84ffc9eb8c.png)
+5. 填写完毕后, 点击 "Run workflow" 开始运行
+6. 编译结果可以在你Fork后的新仓库的Release页面下载
 # 关于内核
 由于目前小米平板5Pro没有其他可用的开源内核，我使用的是[eva内核](https://github.com/mvaisakh/alioth)修改编译  
 以下内容仅供学习交流，构建橙狐使用预先编译好的内核，所以无需重复编译内核  
@@ -76,7 +101,7 @@ cd ~/eva-kernel
 ```
 编译完成后内核文件在~/eva-kernel/ak3文件夹中  
 
-最后提一句，理论上有更好的修改内核的方法：[检测到进入recovery环境则修复画面显示](https://github.com/Rohail33/Realking_kernel_nabu/commit/067af9d07203b4c979ebbc0c0f0339d242a11d38)  
-这样用同一个内核就可以既正常启动系统又可以启动recovery，  
-可惜代码不完善，实测不生效，进入recovery仍然是黑屏，  
-所以如果有其他能制作平板内核的大佬建议可以改进一下这个方法
+最后提一句，这里还有另一个commit：[检测到进入recovery环境则修复画面显示](https://github.com/Rohail33/Realking_kernel_nabu/commit/067af9d07203b4c979ebbc0c0f0339d242a11d38)  
+[修改补丁版](https://github.com/ymdzq/scripts/blob/main/0001-drivers-drm-Add-proper-Support-in-kernel-for-working-recoveries.patch)  
+这个是用在可以启动系统的第三方内核上的，如果集成了这段的代码，可以使这一个内核既正常启动系统又可以启动recovery，就可以在刷了内核后实现固化twrp/橙狐了  
+所以如果有其他能制作平板内核的大佬建议可以apply一下这个patch
