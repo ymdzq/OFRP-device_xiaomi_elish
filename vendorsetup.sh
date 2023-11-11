@@ -117,6 +117,8 @@
 	# export FOX_VENDOR_BOOT_RECOVERY=1
 	# 设置默认时区为北京时间
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
+	# 支持通过修补vbmeta/vbmeta_system禁用avb2.0
+	export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
 	F=$(find "device" -maxdepth 2 -name "elish")
 	# 修改启动画面背景色为#000000
