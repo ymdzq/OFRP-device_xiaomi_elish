@@ -817,6 +817,7 @@
 		<string name="sha2_chk">使用 SHA2 进行散列</string>
 		<string name="disabled">未启用</string>
 		<string name="enabled">已启用</string>
+		<string name="keep_storage_data">恢复存储时保留现有文件</string>
 		<string name="zip_compatible_err">Zip Treble 兼容性错误!</string>
 
 		<string name="unmount_sys_install">安装Zip前卸载系统分区</string>
