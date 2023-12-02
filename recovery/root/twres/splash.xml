@@ -5,7 +5,7 @@
 -->
 <recovery>
 	<details>
-		<resolution width="1080" />
+		<resolution width="1080" h="1920"/>
 		<themeversion>3</themeversion>
 	</details>
 	
@@ -19,18 +19,25 @@
 	<variables>
 		<variable name="of" value="%screen_h%-400"/>
 		<variable name="rec" value="%screen_h%-320"/>
+		<variable name="screen_width" value="1080"/>
+		<variable name="screen_height" value="1920"/>
+		<variable name="header_color" value="#000000"/>
+		<variable name="background_color" value="#000000"/>
 	</variables>
 
 	<pages>
 		<page name="splash">
-			<background color="#000000"/>
-			<fill color="#000000">
-				<placement x="0" y="0" w="1080" h="%center_y%"/>
+			<background color="%background_color%"/>
+
+			<fill color="%header_color%">
+				<placement x="0" y="0" w="%screen_width%" h="%screen_height%"/>
 			</fill>
+
 			<image>
 				<image resource="splash_bg"/>
 				<placement x="540" y="%center_y%" placement="4"/>
 			</image>
+
 			<image>
 				<image resource="splash_logo_w"/>
 				<placement x="540" y="%center_y%" placement="4"/>
@@ -41,6 +48,7 @@
 				<font resource="of" color="#ffffff"/>
 				<text>OrangeFox</text>
 			</text>
+
 			<text style="menu_text">
 				<placement x="540" y="%rec%" placement="4"/>
 				<font resource="recovery" color="#ffffff"/>
