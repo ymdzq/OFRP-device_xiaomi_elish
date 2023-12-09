@@ -61,7 +61,7 @@ OrangeFox Branch
 Custom Recovery Tree  
 `https://github.com/ymdzq/OFRP-device_xiaomi_elish`  
 Custom Recovery Tree Branch  
-`fox_12.1-a13`  
+`fox_12.1-a14`  
 Specify your device path.  
 `device/xiaomi/elish`  
 Specify your Device Codename.  
