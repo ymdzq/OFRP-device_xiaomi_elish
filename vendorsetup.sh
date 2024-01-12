@@ -119,6 +119,8 @@
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 支持通过修补vbmeta/vbmeta_system禁用avb2.0
 	export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
+	# 安装压缩包页面选项的最大数量，调小这个值会显示滚动条（大于4小于9时生效，默认为4）
+	export OF_OPTIONS_LIST_NUM=6
 
 	F=$(find "device" -maxdepth 2 -name "elish")
 	# 修改启动画面背景色为#000000
