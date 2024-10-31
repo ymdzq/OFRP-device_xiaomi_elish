@@ -28,6 +28,8 @@
 	# export FOX_USE_SED_BINARY=1
 	# 支持lz4命令
 	# export FOX_USE_LZ4_BINARY=1
+	# 支持zstd命令
+	export FOX_USE_ZSTD_BINARY=1
 	# 使用bash代替sh和ash
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
