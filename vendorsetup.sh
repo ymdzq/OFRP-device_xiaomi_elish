@@ -38,7 +38,7 @@
 	# 支持lzma, xz命令
 	export FOX_USE_XZ_UTILS=1
 	# 使用橙狐编译的NANO编辑器
-	export FOX_USE_NANO_EDITOR=1
+	# export FOX_USE_NANO_EDITOR=1
 	# 添加phhusson's lptools工具
 	export OF_ENABLE_LPTOOLS=1
 
