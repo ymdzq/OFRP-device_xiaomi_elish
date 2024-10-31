@@ -25,7 +25,7 @@
 	# 支持tar命令
 	export FOX_USE_TAR_BINARY=1
 	# 支持sed命令
-	export FOX_USE_SED_BINARY=1
+	# export FOX_USE_SED_BINARY=1
 	# 使用bash代替sh和ash
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
