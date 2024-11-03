@@ -1,5 +1,5 @@
 # 橙 狐 (OFRP) for Xiaomi Pad 5 Pro (elish)  
-使用小米平板 5 Pro，MIUI 14（安卓13）制作，适用于橙狐安卓12分支  
+使用小米平板 5 Pro，HyperOS1.0（安卓13）制作，适用于橙狐安卓12分支  
 
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")  
 ====================================================
@@ -23,16 +23,12 @@ recovery基本功能都可以正常使用
 （小米能不能放出一个靠谱的最新系统的内核源码？开源的还是安卓11）  
 建议在刷入之前最好利用root权限想办法在系统中备份vendor_boot分区，或者提取你原来的rom包里的vendor_boot镜像，以便在需要的时侯还原  
 
-提供一个自用MIUI 14.0.5.0内核备份，包含14.0.5.0原版boot、dtbo、vendor_boot文件，方便恢复  
-解压得到14.0.5.0文件夹，放入小米平板5Pro“内置存储/Fox/BACKUPS/数字字母组成的机器识别代码”的文件夹里（没有这个文件夹你可以先随便备份一次就有了），即可在recovery中识别备份，可勾选恢复相应分区  
-https://www.123pan.com/s/fRptVv-AgU4.html 提取码:eiGK  
-
 温馨提示：  
 vab设备刷入rom之后会设置下次启动另一个槽位，需要重启生效，  
 比如你当前系统在a槽，rom会刷入b槽，之后需要先重启手机，启动b槽  
 如果未重启直接在rec里刷入面具，会直接刷进a槽，b槽开机后仍无root权限  
 
-偷懒可以试试用搞基助手电脑版、FastbootEnhance这种软件配合刷机  
+偷懒可以试试用搞机助手电脑版、FastbootEnhance这种软件配合刷机  
 # 如何构建
 下载OFRP源代码，克隆这个仓库放到相应的位置  
 例如OFRP源代码根目录为~/fox_12.1，则保存为~/fox_12.1/device/xiaomi/elish/:  
