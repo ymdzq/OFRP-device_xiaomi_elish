@@ -17,7 +17,7 @@
 	# 设置版本号为日期
 	export FOX_VERSION=$(date +%y.%m.%d)
 	# 当你需要标记出这个recovery是一个特殊版本时使用
-	# export FOX_VARIANT=MIUI
+	export FOX_VARIANT=A15
 
 	## 添加功能
 	# 使用完整版getprop命令
