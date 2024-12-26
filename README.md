@@ -4,24 +4,21 @@
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")  
 ====================================================
 # 目前进度
-屏幕画面可以显示，但是有条纹闪烁、花屏现象  
-锁屏后再点亮触屏生效，条纹闪烁、花屏现象消失  
+屏幕画面可以正常显示（需要给twrp源码打7679..7683系列补丁）  
 为了保证ui正常不错位，屏幕右半边留空  
 recovery基本功能都可以正常使用  
-目前看来是由于twrp不支持屏幕dfps功能的问题，使用原装内核无法点亮屏幕，  
-修改内核才能点亮屏幕，但由于内核变了，无法永久刷入机器，只支持临时启动  
-刷入HyperOS（安卓14）之后，如果出现/data解密失败的问题，开机后设置一个锁屏密码，然后就好了  
+刷入HyperOS（安卓15）之后，如果出现/data解密失败的问题，开机后设置一个锁屏密码，然后就好了  
 # 如何使用
 进入[Release](https://github.com/ymdzq/OFRP-device_xiaomi_elish/releases)中，点开Assets选项，点击7z压缩包文件名下载  
 解压所有文件后，打开解压出的文件夹，运行recovery-twrp一键刷入工具.bat根据提示刷入，如果adb连接设备成功会自动重启进入recovery  
 刷入工具脚本，感谢wzsx150大佬  
 
-因为内核是魔改过的版本，临时启动用的是改好的内核，固化会丢掉临时内核，就又会用回miui官方内核然后就点不亮  
-第三方内核需要刷入配套的vendor_boot.img镜像至vendor_boot分区，否则可能假砖无法开机，只能长按10秒电源键重启  
-而刷入橙狐后如果后续没有刷rom替换掉vendor_boot就重启进入系统，可能会影响当前系统稳定性  
-小米平板5Pro目前没有MIUI 14可以正常使用的开源内核，所以做不到两全其美  
-（小米能不能放出一个靠谱的最新系统的内核源码？开源的还是安卓11）  
-建议在刷入之前最好利用root权限想办法在系统中备份vendor_boot分区，或者提取你原来的rom包里的vendor_boot镜像，以便在需要的时侯还原  
+临时启动成功之后，可以通过“菜单”>“更多”>“安装当前OrangeFox”>滑动滑块确认，把橙狐固化进boot分区，替换掉官方recovery，  
+也可以通过刷入zip格式的橙狐安装包来完成固化，  
+固化会替换掉当前的ramdisk，所以magisk的root权限会掉，  
+需要刷入magisk的zip重新root，  
+或者备份当前boot之后用备份出来的boot文件重新修补root，即可实现橙狐、magisk共存。  
+apatch不受固化影响，安装顺序不分先后。  
 
 温馨提示：  
 vab设备刷入rom之后会设置下次启动另一个槽位，需要重启生效，  
@@ -57,7 +54,7 @@ OrangeFox Branch
 Custom Recovery Tree  
 `https://github.com/ymdzq/OFRP-device_xiaomi_elish`  
 Custom Recovery Tree Branch  
-`fox_12.1-a14`  
+`fox_12.1-a15`  
 Specify your device path.  
 `device/xiaomi/elish`  
 Specify your Device Codename.  
@@ -67,38 +64,3 @@ Specify your Build Target
 ![image](https://user-images.githubusercontent.com/37921907/177915346-71c29149-78fb-4a00-996f-5d84ffc9eb8c.png)
 5. 填写完毕后, 点击 "Run workflow" 开始运行
 6. 编译结果可以在你Fork后的新仓库的Release页面下载
-# 关于内核
-由于目前小米平板5Pro没有其他可用的开源内核，我使用的是[eva内核](https://github.com/mvaisakh/alioth)修改编译  
-以下内容仅供学习交流，构建橙狐使用预先编译好的内核，所以无需重复编译内核  
-修改内容来自这个commit  
-原理：[禁用动态fps和设置刷新率为104，修复drm渲染问题](https://github.com/map220v/android_kernel_xiaomi_nabu/commit/90b916915508d3f2b5fe371f0ae29cc6080faf98)  
-### 具体内核编译过程如下：  
-新建eva-kernel文件夹用于下载eva内核源代码，  
-例如在用户目录新建一个eva-kernel文件夹，初始化仓库  
-```bash
-mkdir -p ~/eva-kernel
-cd ~/eva-kernel
-repo init -u https://github.com/mvaisakh/android_kernel_manifest.git -b eva-xiaomi-4.19
-```
-同步源码  
-```bash
-repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
-```
-手动下载[编译脚本](https://github.com/ymdzq/scripts/blob/main/elish.sh)放进eva-kernel文件夹  
-手动下载[修改补丁](https://github.com/ymdzq/scripts/blob/main/0001-HACK-Disable-dynamic-fps-and-set-refresh-rate-104.patch)放进eva-kernel/kernel/msm-4.19文件文件夹  
-用`git apply`命令打补丁
-```bash
-cd ~/eva-kernel/kernel/msm-4.19/
-git apply 0001-HACK-Disable-dynamic-fps-and-set-refresh-rate-104.patch
-```
-开始编译
-```bash
-cd ~/eva-kernel
-./elish.sh
-```
-编译完成后内核文件在~/eva-kernel/ak3文件夹中  
-
-最后提一句，这里还有另一个commit：[检测到进入recovery环境则修复画面显示](https://github.com/Rohail33/Realking_kernel_nabu/commit/067af9d07203b4c979ebbc0c0f0339d242a11d38)  
-[修改补丁版](https://github.com/ymdzq/scripts/blob/main/0001-drivers-drm-Add-proper-Support-in-kernel-for-working-recoveries.patch)  
-这个是用在可以启动系统的第三方内核上的，如果集成了这段的代码，可以使这一个内核既正常启动系统又可以启动recovery，就可以在刷了内核后实现固化twrp/橙狐了  
-所以如果有其他能制作平板内核的大佬建议可以apply一下这个patch
