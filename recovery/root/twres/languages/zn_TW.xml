@@ -71,7 +71,7 @@
 		<string name="backup_btn">備份</string>
 		<string name="restore_btn">恢復</string>
 		<string name="mount_btn">掛載</string>
-		<string name="file_manager_btn">文件管理</string>
+		<string name="file_manager_btn">文件</string>
 		<string name="advanced_btn">高級</string>
 		<string name="reboot_btn">重啟</string>
 		<string name="copy_log_btn">導出日誌</string>
@@ -1149,7 +1149,7 @@
 		<string name="hidden">隱藏</string>
 		<string name="spl_ofr">"OrangeFox Recovery"標籤</string>
 
-		<string name="batch_selected">%of_batch_count% 已選擇</string>
+		<string name="batch_selected">已選擇%of_batch_count%項</string>
 		<string name="batch_title">批次操作</string>
 		<string name="batch_files_folders">文件 &amp; 文件夾</string>
 
