@@ -148,7 +148,7 @@
 		<string name="file_sys_opt">文件系统选项</string>
 		<string name="part_mount_point">挂载位置</string>
 		<string name="part_curr_fs">文件系统</string>
-		<string name="part_present">当前：</string>
+		<string name="part_present">存在：</string>
 		<string name="part_removable">可卸载：</string>
 		<string name="part_yes">是</string>
 		<string name="part_no">否</string>
@@ -156,7 +156,7 @@
 		<string name="part_used">已使用</string>
 		<string name="part_free">空闲</string>
 		<string name="part_backup_size">备份大小</string>
-		<string name="resize_btn">调整文件系统</string>
+		<string name="resize_btn">调整分区大小</string>
 		<string name="resize_confirm">是否调整分区</string>
 		<string name="resizing">正在调整...</string>
 		<string name="resize_complete">调整已完成</string>
@@ -597,7 +597,7 @@
 		<string name="sel_color">选择颜色</string>
 		<string name="s_color">颜色</string>
 		<string name="current_color">文件系统：</string>
-		<string name="show_cpu_temp_bar">显示CPU 温度：</string>
+		<string name="show_cpu_temp_bar">显示CPU温度</string>
 		<string name="ts_inform">信息</string>
 		<string name="sel_splash_png">选择启动图（.png）</string>
 		<string name="swipe_to_install">滑动滑块确认安装</string>
