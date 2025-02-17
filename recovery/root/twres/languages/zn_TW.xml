@@ -635,6 +635,7 @@
 		<string name="dbg_overlay">覆蓋</string>
 		<string name="fm_none">無</string>
 		
+		<string name="cust_navbar_pie">安卓9樣式</string>
 		<string name="cust_navbar_noug">安卓7樣式</string>
 		<string name="cust_navbar_cls">經典樣式</string>
 		<string name="cust_navbar_accent">強調色</string>
