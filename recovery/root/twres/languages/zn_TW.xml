@@ -685,6 +685,7 @@
 		
 		<string name="update_btn">更新</string>
 		<string name="include_kernel_log">包括內核日誌</string>
+		<string name="include_logcat">包括 Logcat 日誌</string>
 		
 		<string name="fm_books">收藏夾</string>
 		<string name="fm_books_desc">長按對應項目進行編輯</string>
@@ -840,6 +841,7 @@
 		<string name="fox_internal_q1">OrangeFox - 內建儲存 - 注意！</string>
 
 		<string name="copy_kernel_log">kernel 日誌已複製到 {1}</string>
+		<string name="copy_logcat">logcat 日誌已複製到 {1}</string>
 
 		<string name="of_run_process">等待 '{1}' 連接</string>
 		<string name="of_run_process_fail">無法完成 '{1}' 過程</string>
