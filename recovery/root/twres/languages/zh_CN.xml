@@ -49,7 +49,7 @@
 		<string name="sdcard">SDCard</string>
 		<string name="internal">内置存储设备</string>
 		<string name="microsd">SD 卡</string>
-		<string name="usbotg">外置 U 盘</string>
+		<string name="usb_storage">外置 U 盘</string>
 		<string name="android_secure">Android Secure</string>
 		<string name="dalvik">Dalvik / ART 缓存</string>
 		<!-- This is a rarely used partition on a Micro SD card for a very old app2sd system -->
@@ -968,9 +968,9 @@
 		<string name="part_menu_hdr">管理分区</string>
 		<string name="run_adb_startup">启动时自动运行 ADB</string>
 
-		<!-- MMGUI -->
+		<!-- Root modules manager -->
 		<string name="mm_module_active">活动</string>
-		<string name="mm_module_mount">自动挂载</string>
+		<string name="mm_module_mount">跳过挂载</string>
 		<string name="mm_modules">模块</string>
 		<string name="mm_ver">Magisk 版本</string>
 		<string name="mm_mod_ver">模块版本</string>
@@ -981,7 +981,18 @@
 		<string name="magisk_not_found_1">您想到Fox插件中心</string>
 		<string name="magisk_not_found_2">安装预设的Magisk吗？</string>
 		<string name="magisk_not_found_3"></string>
-		
+
+		<!-- APatch / KernelSU modules -->
+		<string name="ap_modules">APatch 模块</string>
+		<string name="ap_ver">APatch 版本</string>
+		<string name="ksu_modules">KernelSU 模块</string>
+		<string name="ksu_ver">KernelSU 版本</string>
+
+		<string name="modules_not_found">未发现模块!</string>
+		<string name="modules_not_found_1">模块未安装</string>
+		<string name="modules_not_found_2">或无法挂载！</string>
+		<string name="modules_not_found_3"></string>
+
 		<!-- MIUI OTA -->
 		<string name="fox_ota_settings">OTA设置</string>
 		<string name="fox_miui_ota_on">启用 OTA</string>
