@@ -127,7 +127,7 @@
 				<background color="%keyboard_bg%"/>
 				<key-alphanumeric color="%keyboard_bg%" font="keylabel" textcolor="%text%"/>
 				<key-other color="%keyboard_bg%" font="keylabel-bold" textcolor="%text_light%"/>
-				<longpress font="keylabel-longpress" textcolor="%text_light%" x="-90" y="12"/>
+				<longpress font="keylabel-longpress" textcolor="%text_light%" x="-196" y="12"/>
 				<keylabel key="0:c:8" text="" resource="backspace" />
 				<keylabel key=" " text="" resource="space" noalt="1"/>
 				<keylabel key="162:action" text="" resource="enter" alt="enter_new"/>
