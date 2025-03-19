@@ -125,6 +125,8 @@
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 支持通过修补vbmeta/vbmeta_system禁用avb2.0
 	export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
+	# 在gui初始化的早期阶段加载主题和设置（包括语言设置）
+	export FOX_ALLOW_EARLY_SETTINGS_LOAD=1
 	# 安装压缩包页面选项的最大数量，调小这个值会显示滚动条（大于4小于9时生效，默认为4）
 	export OF_OPTIONS_LIST_NUM=9
 
