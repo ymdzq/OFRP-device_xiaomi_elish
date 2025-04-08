@@ -8,6 +8,7 @@
 /data               f2fs     /dev/block/bootdevice/by-name/userdata          flags=display="Data";fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
 /cache              ext4     /dev/block/bootdevice/by-name/rescue            flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /storage            ext4     /data/media/0                                   flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
+/frp                emmc     /dev/block/bootdevice/by-name/frp               flags=display="Google Lock(FRP)";wipeingui
 
 # Dynamic Partition
 /system             ext4     /dev/block/mapper/system                        flags=display="System";logical;slotselect
