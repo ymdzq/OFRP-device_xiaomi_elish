@@ -209,7 +209,8 @@
 		<string name="rename_backup_complete">重命名備份文件已完成</string>
 		<string name="swipe_to_rename">滑動滑塊確認重命名</string>
 		<string name="mount_hdr">掛載</string>
-		<string name="mount_sys_ro_chk">掛載 System 和 Vendor 分區為只讀</string>
+		<string name="mount_sys_ro_chk">掛載 System 分區為只讀</string>
+		<string name="erofs_is_ro_fs">EROFS是只讀檔案系統，無法以讀/寫模式掛載！</string>
 		<string name="decrypt_data_btn">解密 Data 分區</string>
 		<string name="disable_mtp_btn">禁用 MTP</string>
 		<string name="enable_mtp_btn">啟用 MTP</string>
@@ -1016,7 +1017,37 @@
 		<string name="abt_main_shrt">維護人員</string>
 		<string name="welcome_msg">歡迎使用 OrangeFox!</string>
 		<string name="welcome_msg2"><!-- If welcome message is too big in your lang, use this string --></string>
-		
+
+		<string name="fox_welcome">歡迎使用OrangeFox</string>
+		<string name="fox_release">[版本]：{1}</string>
+		<string name="fox_variant">[變體]：{1}</string>
+		<string name="fox_codebase">[程式碼庫]：{1}，{2}</string>
+		<string name="fox_settings">[設定]：{1}</string>
+		<string name="fox_misc">[雜項]：{1}</string>
+		<string name="fox_build_date">[構建日期]：{1}</string>
+		<string name="fox_build_type_unofficial">[構建型別]：非官方。不支援非官方版本</string>
+		<string name="fox_build_type">[構建型別]：{1}</string>
+		<string name="fox_support">[支援]：{1}</string>
+		<string name="fox_nosupport">[支援]：不支援未知版本</string>
+		<string name="fox_websites">OrangeFox網站：</string>
+		<string name="fox_downloads">[下載]：{1}</string>
+		<string name="fox_faq">[指南/常見問題]：{1}</string>
+		<string name="fox_encrypted">* 儲存已加密</string>
+		<string name="fox_unencrypted">* 儲存未加密</string>
+		<string name="fox_display">* 顯示：{1}</string>
+		<string name="fox_device">* 裝置：{1}（{2}）</string>
+		<string name="fox_platform">* 平臺：{1}</string>
+		<string name="fox_dynamic_yes">* 動態：是</string>
+		<string name="fox_dynamic_no">* 動態：否</string>
+		<string name="fox_boot_slot">* 啟動槽：{1}</string>
+		<string name="fox_vab_yes">* 虛擬AB：是</string>
+		<string name="fox_vab_no">* 虛擬AB：否</string>
+		<string name="fox_kernel">* 核心：{1}</string>
+		<string name="fox_miui_rom">* MIUI ROM（SDK:{1}，{2}）</string>
+		<string name="fox_custom_rom">* 自訂ROM（SDK:{1}，{2}）</string>
+		<string name="fox_fingerprint">* 指紋：{1}</string>
+		<string name="fox_no_rom">* 無ROM。</string>
+
 		<!-- Symlink -->
 		<string name="symlink_dir_name">連結到文件夾</string>
 		<string name="symlink_file_name">連結到文件</string>
@@ -1248,5 +1279,11 @@
 		<string name="disabling_AVB2_complete">禁用 AVB2.0 完成！</string>
 		<string name="disable_avb2_success_msg">禁用AVB2.0：處理 '{1}' 成功。</string>
 		<string name="disable_avb2_fail_msg">禁用AVB2.0：處理 '{1}' 失敗！</string>
+
+		<string name="enable_hw_control">GUI按鍵控制</string>
+		<string name="enable_hw_control_1">允許使用實體音量鍵</string>
+		<string name="enable_hw_control_2">和電源鍵操作介面。</string>
+		<string name="enable_hw_control_3">手勢將被禁用。</string>
+		<string name="enable_hw_control_4">繼續執行？</string>
 	</resources>
 </language>
