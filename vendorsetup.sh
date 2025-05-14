@@ -128,7 +128,7 @@
 	# 在gui初始化的早期阶段加载主题和设置（包括语言设置）
 	export FOX_ALLOW_EARLY_SETTINGS_LOAD=1
 	# 安装压缩包页面选项的最大数量，调小这个值会显示滚动条（大于4小于9时生效，默认为4）
-	export OF_OPTIONS_LIST_NUM=9
+	export OF_OPTIONS_LIST_NUM=11
 
 	F=$(find "device" -maxdepth 2 -name "elish")
 	# 修改启动画面背景色为#000000
