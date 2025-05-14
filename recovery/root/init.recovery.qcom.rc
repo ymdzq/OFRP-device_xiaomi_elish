@@ -45,6 +45,7 @@ on init
 
 on boot
     start health-hal-2-1
+    start batterysecret
     setprop sys.usb.config adb
 
 on property:vendor.sys.listeners.registered=true
