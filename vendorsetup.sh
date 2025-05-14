@@ -62,7 +62,7 @@
 	# 禁用检查rom里的compatibility.zip
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	# 使用zip卡刷包的方式安装橙狐后不恢复橙狐的默认设置
-	export FOX_RESET_SETTINGS=disabled
+	# export FOX_RESET_SETTINGS=disabled
 	# 删除zip包里的AromaFM（有的设备用不了）
 	export FOX_DELETE_AROMAFM=1
 
