@@ -50,6 +50,8 @@
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	# export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
+	# ramdisk使用lzma压缩
+	export OF_USE_LZMA_COMPRESSION=1
 
 	# 不生成recovery的zip刷机包
 	# export FOX_DISABLE_UPDATEZIP=1
