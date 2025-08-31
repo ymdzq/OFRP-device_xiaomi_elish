@@ -131,6 +131,8 @@
 	export OF_OPTIONS_LIST_NUM=11
 	# 跳过新版fstab处理
 	export OF_FORCE_USE_RECOVERY_FSTAB=1
+	# 指定默认keymaster版本为4.0
+	export OF_DEFAULT_KEYMASTER_VERSION=4.0
 
 	F=$(find "device" -maxdepth 2 -name "elish")
 	# 修改启动画面背景色为#000000
