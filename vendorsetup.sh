@@ -113,6 +113,8 @@
 	# export FOX_USE_SPECIFIC_MAGISK_ZIP="$HOME/Magisk.zip"
 	# 使用指定的magisk版本号，由于magisk 23+使用了新的包装形式，文件路径改变了，橙狐无法获取正确的版本
 	# export MAGISK_VER=26.1
+	# 使用新版的magiskboot(2024以后的版本，新设备可能需要，可能与修改启动图等功能冲突)
+	export FOX_USE_UPDATED_MAGISKBOOT=1
 	# 当修补recovery/boot镜像时，始终指示magiskboot v24+修补vbmeta标头（自动禁用avb验证？）
 	export FOX_PATCH_VBMETA_FLAG=1
 	# 标记该设备肯定是原生Android 11+虚拟A/B（“VAB”）设备
