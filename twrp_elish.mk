@@ -28,6 +28,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := elish
 PRODUCT_NAME := twrp_elish
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := M2105K81AC
+#PRODUCT_MODEL := M2105K81AC
 PRODUCT_MANUFACTURER := Xiaomi
-#PRODUCT_RELEASE_NAME := Xiaomi Pad 5 Pro
+PRODUCT_MODEL := Xiaomi Pad 5 Pro
