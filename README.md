@@ -4,8 +4,8 @@
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")  
 ====================================================
 # 目前进度
-屏幕画面可以正常显示（需要给twrp源码打7679..7683系列补丁）  
-为了保证ui正常不错位，屏幕右半边留空  
+屏幕画面可以正常显示  
+为了保证ui正常不错位，屏幕左右有留空  
 recovery基本功能都可以正常使用  
 刷入HyperOS（安卓15）之后，如果出现/data解密失败的问题，开机后设置一个锁屏密码，然后就好了  
 # 如何使用
@@ -54,7 +54,7 @@ OrangeFox Branch
 Custom Recovery Tree  
 `https://github.com/ymdzq/OFRP-device_xiaomi_elish`  
 Custom Recovery Tree Branch  
-`fox_12.1-a15`  
+`fox_12.1-a16`  
 Specify your device path.  
 `device/xiaomi/elish`  
 Specify your Device Codename.  
