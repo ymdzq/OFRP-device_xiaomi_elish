@@ -158,7 +158,7 @@ TARGET_USES_LOGD := true
 TW_NO_HAPTICS := true
 
 # Kernel modules
-TW_LOAD_VENDOR_MODULES := "exfat.ko"
+TW_LOAD_VENDOR_MODULES := "exfat.ko qca_cld3_qca6390.ko qca_cld3_qca6490.ko"
 
 # Serialno
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
